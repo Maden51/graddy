@@ -25,16 +25,18 @@ function handleOpen() {
     header.style.background = 'rgba(0, 65, 71, .8)'
 };
 
-catalogBtn.addEventListener('mouseenter', handleOpen);
-
-body.addEventListener('click', function() {
+function handleClose() {
     headerDrop.classList.remove('is-active')
     headerSearch.classList.add('is-active')
     headerEmail.classList.add('is-active')
     headerPhonenumber.classList.add('is-active')
     catalogBtn.style.color = '#fff'
     header.style.background = 'rgba(0, 65, 71, .5)'
-});
+}
+
+catalogBtn.addEventListener('mouseenter', handleOpen);
+
+header.addEventListener('mouseleave', handleClose);
 /* catalog */
 
 /* Burger menu */
