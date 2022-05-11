@@ -13,7 +13,21 @@ const mobileBurger = document.querySelector('.header-mobile-burger');
 const aboutNextBtn = document.querySelector('.about-mob-next');
 const aboutMobNext = document.querySelector('.about-next');
 const aboutMobNext2 = document.getElementById('about-next-2');
-const body = document.querySelector('.body');
+
+// Hide header with scroll
+
+let prevScrollPos = window.scrollY;
+window.addEventListener('scroll', function() {
+    let currentScrollPos = window.scrollY;
+    if (prevScrollPos > currentScrollPos) {
+        header.style.top = '0';
+    } else {
+        header.style.top = '-150px';
+    }
+    prevScrollPos = currentScrollPos
+});
+
+// Hide header with scroll
 
 /* catalog */
 function handleOpen() {
@@ -49,9 +63,9 @@ menuCloseBtn.addEventListener('click', function(e) {
     document.body.classList.remove('_lock')
 })
 mobileBurger.addEventListener('click', function(e) {
-    mobileMenu.classList.add('active')
-    document.body.classList.add('_lock')
-})
+        mobileMenu.classList.add('active')
+        document.body.classList.add('_lock')
+    })
     /* Burger menu */
 
 /* aboutNext */
@@ -147,28 +161,23 @@ const swiper = new Swiper(".swiper-main", {
         renderBullet(index, className) {
             const thumb = this.slides[index].dataset.thumb;
             const text = this.slides[index].dataset.text;
-            return (
-                `<div class="${className}">
-                    <img class="swiper-pagination-image" src="${thumb}">
-                    <span>${text}</span>
-                </div>`
-            );
+            return `<div class="${className}">
+                <div class="swiper-pagination-image-wrapper">
+                  <img class="swiper-pagination-image" src="${thumb}">
+                  </div>
+                <span>${text}</span>
+                <div class="swiper-pagination-bg swiper-pagination-bg-left-side">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="swiper-pagination-bg swiper-pagination-bg-right-side">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                </div>`;
         }
     },
 });
 /* Swiper galleries */
-
-// Hide header with scroll
-
-let prevScrollPos = window.scrollY;
-window.addEventListener('scroll', function() {
-    let currentScrollPos = window.scrollY;
-    if (prevScrollPos > currentScrollPos) {
-        header.style.top = '0';
-    } else {
-        header.style.top = '-150px';
-    }
-    prevScrollPos = currentScrollPos
-});
-
-// Hide header with scroll
