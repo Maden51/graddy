@@ -154,6 +154,10 @@
         padding-right: 6px;
         cursor: pointer;
     }
+
+    .mob-content-forms {
+        margin-top: 30px;
+    }
     
     .menu-close-btn, .filter-close-btn {
         border: none;
