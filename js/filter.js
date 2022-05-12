@@ -59,6 +59,6 @@ selectDropDownList.children.forEach(element => {
         const value = e.target.textContent;
         selectBtn.textContent = value;
         selectDropDown.classList.remove('active');
-        selectBtn.classList.remove('active')
+        selectBtn.classList.remove('active');
     });
 });

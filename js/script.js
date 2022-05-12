@@ -18,7 +18,7 @@ const aboutMobNext2 = document.getElementById('about-next-2');
 // Hide header with scroll
 
 window.addEventListener('scroll', function() {
-    if (this.document.body.scrollTop > 0 || this.document.documentElement.scrollTop > 0) {
+    if ((this.document.body.scrollTop > 0 || this.document.documentElement.scrollTop > 0) && !headerDrop.classList.contains('is-active')) {
         headerSearch.classList.remove('is-active')
         headerPhonenumber.classList.remove('is-active')
         headerEmail.classList.remove('is-active')
@@ -27,12 +27,12 @@ window.addEventListener('scroll', function() {
         headerMiddle.style.marginTop = '18px';
         headerWrapper.style.minHeight = 0;
     } else {
-        headerDrop.classList.remove('is-active')
-        headerSearch.classList.add('is-active')
-        headerEmail.classList.add('is-active')
-        headerPhonenumber.classList.add('is-active')
-        catalogBtn.style.color = '#fff'
-        header.style.background = 'rgba(0, 65, 71, .5)'
+        headerDrop.classList.remove('is-active');
+        headerSearch.classList.add('is-active');
+        headerEmail.classList.add('is-active');
+        headerPhonenumber.classList.add('is-active');
+        catalogBtn.style.color = '#fff';
+        header.style.background = 'rgba(0, 65, 71, .5)';
         headerMiddle.style.marginTop = 0;
     }
 });
@@ -49,7 +49,6 @@ function handleOpen() {
     header.style.background = 'rgba(0, 65, 71, .8)'
     headerMiddle.style.minHeight = '80px';
     headerWrapper.style.minHeight = '120px';
-    headerMiddle.style.marginTop = 0;
 };
 
 function handleClose() {
