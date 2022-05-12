@@ -16,15 +16,12 @@ const aboutMobNext2 = document.getElementById('about-next-2');
 
 // Hide header with scroll
 
-let prevScrollPos = window.scrollY;
 window.addEventListener('scroll', function() {
-    let currentScrollPos = window.scrollY;
-    if (prevScrollPos > currentScrollPos) {
-        header.style.top = '0';
+    if (this.document.body.scrollTop > 0 || this.document.documentElement.scrollTop > 0) {
+        handleOpen();
     } else {
-        header.style.top = '-150px';
+        handleClose()
     }
-    prevScrollPos = currentScrollPos
 });
 
 // Hide header with scroll
