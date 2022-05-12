@@ -30,3 +30,15 @@ filterCloseBtn.addEventListener('click', function() {
     filterMenu.classList.remove('active');
     document.body.classList.remove('_lock');
 })
+
+//filter-product-list
+
+const mobProductsBtn = document.querySelector('.mob-products-next');
+const productsCard = document.querySelectorAll('.products-card');
+
+mobProductsBtn.addEventListener('click', function() {
+    mobProductsBtn.style.display = 'none';
+    productsCard.forEach(element => {
+        element.style.display = 'flex';
+    });
+})

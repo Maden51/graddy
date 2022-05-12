@@ -462,6 +462,7 @@
         background: #FFFFFF;
         padding: 0 16px 18px;
         height: 100%!important;
+        display: flex;
         min-height: 250px;
         height: auto;
         position: relative;
@@ -1608,7 +1609,16 @@
     }
 
     .mob-products-next {
-        visibility: hidden;
+        display: none;
+        cursor: pointer;
+    }
+
+    .mob-products-next span {
+        text-decoration: underline;
+        line-height: 114.9%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-right: 13px;
     }
 
     .content-forms {
@@ -2206,6 +2216,10 @@
             display: none!important;
         }
 
+        .content-products {
+            justify-content: center;
+        }
+
         .content-products a {
             width: 48%;
         }
@@ -2220,6 +2234,15 @@
 
         .content-products a:nth-child(n+3) {
             margin-top: 20px;
+        }
+
+        .content-products a:nth-child(n+11) {
+            display: none;
+        }
+
+        .mob-products-next {
+            display: block;
+            margin-top: 34px;
         }
     }
     
