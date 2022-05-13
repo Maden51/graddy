@@ -56,7 +56,7 @@
     color: #4C4C4C;
 }
 
-.top-right-title h2 {
+.top-right-title .cost-title {
     font-size: 20px;
     font-weight: 400;
 }
@@ -200,4 +200,297 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
     opacity: 1;
     border-bottom: 2px solid #FFF;
+}
+
+.tab-color {
+    width: 42px;
+    height: 42px;
+    background-position: right;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.tab-color svg {
+    margin-left: 2px;
+}
+
+.tab-title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.tab-content span {
+    color: #FFF;
+    text-decoration: underline;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tab-color.hidden {
+    display: none;
+}
+
+.tab-color.color-1 {
+    background-image: url('../img/productCard/color-1.svg');
+}
+
+.tab-color.color-2 {
+    background-image: url('../img/productCard/color-2.svg');
+}
+
+.tab-color.color-3 {
+    background-image: url('../img/productCard/color-3.svg');
+}
+
+.tab-color.color-4 {
+    background-image: url('../img/productCard/color-4.svg');
+}
+
+.tab-color.color-5 {
+    background-image: url('../img/productCard/color-5.svg');
+}
+
+.tab-color.color-6 {
+    background-image: url('../img/productCard/color-6.svg');
+}
+
+.tab-color.color-7 {
+    background-image: url('../img/productCard/color-7.svg');
+}
+
+.tab-color.color-8 {
+    background-image: url('../img/productCard/color-8.svg');
+}
+
+.tab-color.color-9 {
+    background-image: url('../img/productCard/color-9.svg');
+}
+
+.tab-color.color-10 {
+    background-image: url('../img/productCard/color-10.svg');
+}
+
+.tab-color.color-11 {
+    background-image: url('../img/productCard/color-11.svg');
+}
+
+.tab-color.color-12 {
+    background-image: url('../img/productCard/color-12.svg');
+}
+
+.middle-tab {
+    margin-top: 23.6px;
+}
+
+.middle-tab nav a {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'El Messiri', sans-serif;
+    text-transform: uppercase;
+    line-height: 28px;
+    color: #FFF;
+    width: 33.3%;
+    text-align: center;
+}
+
+.middle-tab .nav-link {
+    opacity: 0.5;
+}
+
+.middle-tab .nav-link.active {
+    background: transparent;
+    opacity: 1;
+    color: #FFF;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+.middle-tab .nav-link:hover {
+    color: #fff;
+}
+
+.middle-tab .nav {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.middle-tab .tab-content {
+    margin-top: 40px;
+}
+
+.middle-tab-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4c4c4c;
+}
+
+.middle-tab p {
+    color: #4c4c4c;
+    font-size: 16px;
+}
+
+.tab-item ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #4c4c4c;
+}
+
+.tab-right-item {
+    text-align: right;
+    display: flex;
+    position: relative;
+    margin-right: 42px;
+}
+
+.tab-right-item::after {
+    content: '';
+    width: 130px;
+    margin-top: 69px;
+    height: 2px;
+    display: block;
+    background-color: #FFF;
+    right: -86px;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+
+.tab-left-item {
+    margin-right: 150px;
+}
+
+.card-reviews {
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+    color: #4c4c4c;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.card-reviews h4 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.card-reviews h5 {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.container-xxl h2 {
+    text-align: center;
+    margin-top: 58px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "El Messiri", sans-serif;
+}
+
+.form-right-part {
+    width: 30%;
+}
+
+.form-left-part {
+    width:68%;
+    margin-left: 2%;
+}
+
+.content-footer input, textarea {
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+}
+
+.content-footer input:focus, textarea:focus {
+    outline: 1px solid #7d6245;
+}
+
+.content-footer textarea {
+    width: 100%;
+    resize: none;
+    height: 109px;
+}
+
+#input-name {
+    margin-bottom: 15px;
+}
+
+#input-email {
+    margin-bottom: 10px;
+}
+
+.agreement input {
+    opacity: 0;
+    position: absolute;
+}
+
+.agreement label {
+    position: relative;
+}
+
+.agreement input, .agreement label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.agreement input + label::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #FFF;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    border: none;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+.agreement input:checked + label::before {
+    content: '';
+    background-image: url('../img/productCard/form-review-ok.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+}
+
+.content-footer label {
+    font-size: 12px;
+    color: #5D462F;
+    line-height: 19px;
+}
+
+.content-footer .agreement {
+    display: flex;
+    align-items: center;
+}
+
+.content-footer button {
+    background-color: #FF7800;
+    padding: 10px 30px;
+    width: 145px;
+    margin-top: 29px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 0;
+}
+
+.content-footer button:hover {
+    color: #fff;
+    background-color: #ff7700af;
+}
+
+.content-footer button:focus {
+    outline: 1px solid #363636;
 }
