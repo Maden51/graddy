@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graddy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/productCard.css">
+</head>
+<noscript>
+    <style>
+        .simplebar-content-wrapper {
+            overflow: auto;
+        }
+    </style>
+</noscript>
+
+<body class="body">
+    <header class="header">
+        <div class="container-xxl">
+            <div class="header-wrapper row d-flex justify-content-between align-items-center flex-nowrap">
+                <button class="header-mobile-burger col-sm-2">
+                    <img src="./img/menu-burger.svg" alt="">
+                </button>
+                <a href="#" class="header-logo col-xl-2 col-sm-3">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <div class="header-middle col-7">
+                    <ul class="header-list d-flex align-items-center flex-wrap">
+                        <li class="header-list-menus">
+                            <a href="#">Каталог товаров</a>
+                            <img src="./img/menu-arrow.svg" alt="">
+                        </li>
+                        <li>
+                            <a href="#">акции</a>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">ИНФОРМАЦИЯ</a>
+                        </li>
+                        <li>
+                            <a href="#">уСЛУГИ</a>
+                        </li>
+                        <li>
+                            <a href="#">коНТАКТЫ</a>
+                        </li>
+                    </ul>
+                    <div class="header-search is-active">
+                        <img src="./img/search.svg" alt="">
+                        <input type="text">
+                    </div>
+                </div>
+                <a href="#" class="header-mobile-phone col-sm-1">
+                    <img src="./img/mobile-phone.svg" alt="">
+                </a>
+                <div class="header-infos col-2">
+                    <a href="tel:4951500991">(495) 150-09-91</a>
+                    <a href="tel:88001500991">8 (800) 150-09-91</a>
+                    <a class="is-active" href="tel:4951500991">(495) 150-09-91</a>
+                    <a class="header-infos-email is-active" href="mailto:zakaz@graddi.ru">zakaz@graddi.ru</a>
+                </div>
+            </div>
+            <ul class="header-dropdown justify-content-center">
+                <li class="header-dropdown-catalog col-2" style="width: 18%;">
+                    <h5>Каталог</h5>
+                    <a href=" # ">Распродажа</a>
+                    <a href="# ">Тротуарная плитка</a>
+                    <a href="# ">Бордюрный камень</a>
+                    <a href="# ">Вибропрессованные ступени</a>
+                    <a href="# ">Водоотводные лотки</a>
+                    <a href="# ">Дренажные лотки</a>
+                    <a href="# ">Грантинеы изделия для дорог</a>
+                </li>
+
+                <li class="header-dropdown-form col-3 ">
+                    <h5>Форма</h5>
+                    <div class="header-form-wrapper d-flex justify-content-between ">
+                        <div>
+                            <a href="# ">
+                                <img src="./img/header-form-1.svg " alt=" ">Квадрат
+                            </a>
+                            <a href="# ">
+                                <img src="./img/header-form-2.svg " alt=" ">Брусчатка
+                            </a>
+                            <a href="# ">
+                                <img src="./img/header-form-3.svg " alt=" ">Уголок
+                            </a>
+                            <a href="# ">
+                                <img src="./img/header-form-4.svg " alt=" ">Трамвайные плиты</a>
+                            <a href="# ">
+                                <img src="./img/header-form-5.svg " alt=" ">Ригель
+                            </a>
+                        </div>
+                        <div>
+                            <a href="# ">
+                                <img src="./img/header-form-6.svg " alt=" ">Новый город</a>
+                            <a href="# ">
+                                <img src="./img/header-form-7.svg " alt=" ">Классико
+                            </a>
+                            <a href="# ">
+                                <img src="./img/header-form-8.svg " alt=" ">Бавария
+                            </a>
+                            <a href="# ">
+                                <img src="./img/header-form-9.svg " alt=" ">Садовая
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="header-dropdown-color col-2 ">
+                    <h5>ЦВет</h5>
+                    <div class="header-color-wrapper ">
+                        <div>
+                            <button>
+                                <img src="./img/header-color-1.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-2.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-3.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-3.png " alt=" ">
+                            </button>
+                        </div>
+                        <div>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-3.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                        </div>
+                        <div>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-3.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                        </div>
+                        <div>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-3.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="mob-menu ">
+        <div class="container-xxl ">
+            <div class="mob-menu-top d-flex justify-content-between align-items-start ">
+                <a href="# " class="mob-menu-logo col-xs-1 ">
+                    <img src="./img/logo.svg " alt=" ">
+                </a>
+                <button class="menu-close-btn col-xs-1 ">
+                    <img src="./img/close.svg " alt=" ">
+                </button>
+            </div>
+            <div class="mob-search ">
+                <img src="./img/search.svg " alt=" ">
+                <input type="text ">
+            </div>
+            <nav class="mobile-menu ">
+                <ul>
+                    <li class="mobile-menu-drop ">
+                        <a href="# ">Каталог Товаров</a>
+                        <img src="./img/menu-arrow-dark.svg " alt=" ">
+                        <ul class="mobile-drop-list ">
+                            <li>
+                                <a href="# ">Каталог</a>
+                            </li>
+                            <li>
+                                <a href="# ">Форма</a>
+                            </li>
+                            <li>
+                                <a href="# ">Цвет</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="# ">Акции</a>
+                    </li>
+                    <li>
+                        <a href="# ">О компании</a>
+                    </li>
+                    <li>
+                        <a href="# ">ИНФОРМАЦИЯ</a>
+                    </li>
+                    <li>
+                        <a href="# ">уСЛУГИ</a>
+                    </li>
+                    <li>
+                        <a href="# ">коНТАКТЫ</a>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="content">
+        <div class="container-xxl">
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs-list d-flex align-items-center justify-content-center">
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Продукция</a>
+                    </li>
+                    <li>
+                        <a href="#">Тротуарная плитка</a>
+                    </li>
+                    <li>
+                        <a href="#">Прямоугольная тротуарная плитка</a>
+                    </li>
+                    <li>
+                        <span>Акции</span>
+                    </li>
+                </ul>
+            </div>
+            <h1 class="title">паркет 300х100х80</h1>
+            <div class="content-item">
+                <div class="content-top d-flex">
+                    <div class="content-top-left-item">
+                        <div class="item-image">
+                            <div class="image-wrapper">
+                                <img src="./img/productCard/image 1.png" alt="изображение товара" />
+                            </div>
+                            <h2 class="image-title">НАЗВАНИЕ, ЗАГОЛОВОК</h2>
+                            <div class="container-xxl">
+                                <div class="images-wrapper swiper ">
+                                    <div class="images-cards swiper-wrapper d-flex align-items-stretch justify-content-between">
+                                        <a href="img/productCard/Group 823.png" class="image-card swiper-slide" data-fancybox="image-gallery">
+                                            <div class="image-card-img ">
+                                                <img src="./img/productCard/Group 823.png" alt="" >
+                                            </div>
+                                        </a>
+                                        <a href="img/productCard/Group 823.png" class="image-card swiper-slide" data-fancybox="image-gallery">
+                                            <div class="image-card-img ">
+                                                <img src="./img/productCard/Group 823.png" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="img/productCard/Group 823.png" class="image-card swiper-slide" data-fancybox="image-gallery">
+                                            <div class="image-card-img ">
+                                                <img src="./img/productCard/Group 823.png" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="img/productCard/Group 823.png" class="image-card swiper-slide " data-fancybox="image-gallery">
+                                            <div class="image-card-img ">
+                                                <img src="./img/productCard/Group 823.png" alt="">
+                                            </div>
+                                        </a>
+                                        <a href="img/productCard/Group 823.png" class="image-card swiper-slide" data-fancybox="image-gallery">
+                                            <div class="image-card-img ">
+                                                <img src="./img/productCard/Group 823.png" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev swiper-button-prev-3"></div>
+                                <div class="swiper-button-next swiper-button-next-3"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="content-top-right-item">
+                        <div class="top-right-title">
+                            <h2 class="cost-title">₽ от 900 руб/м2</h2>
+                        </div>
+                        <form class="buy-form">
+                            <div class="form-header">
+                                <h3>Выберите количество:</h3>
+                                <span>Отгрузка производится кратно целому поддону!</span>
+                            </div>
+                            <div class="form-main d-flex">
+                                <div>
+                                    <label for="meters">м²</label>
+                                    <div class="input-group mb3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary btn-minus" type="button">-</button>
+                                        </div>
+                                        <input type="number" class="form-control" placeholder="30" name="meters" id="meters">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary btn-plus" type="button">+</button>
+                                        </div>
+                                    </div>
+                                    <span>Площать покрытия</span>
+                                </div>
+                                <div>
+                                    <label for="count">поддоны</label>
+                                    <div class="input-group mb3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary btn-minus" type="button">-</button>
+                                        </div>
+                                        <input type="number" class="form-control" placeholder="3" name="count" id="count">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary btn-plus" type="button">+</button>
+                                        </div>
+                                    </div>
+                                    <span>Кол-во поддонов</span>
+                                </div>
+                                <div>
+                                    <label>общее кол-во:</label>
+                                    <div class="summary">34.56 м2</div>
+                                </div>
+                            </div>
+                            <div class="form-footer">
+                                <div>
+                                    <label>сумма:</label>
+                                    <div class="summary">
+                                        33 869.00 ₽
+                                    </div>
+                                </div>
+                                <div class="form-btn d-flex align-items-center">
+                                    <button type="button" class="cart-btn">
+                                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.7319 4.74063C20.6361 4.60216 20.5081 4.48899 20.359 4.41079C20.2099 4.3326 20.044 4.29173 19.8757 4.29167H5.63919L4.43711 1.40625C4.27949 1.02628 4.0126 0.701659 3.67026 0.473558C3.32792 0.245456 2.92556 0.124145 2.51419 0.125005H0.0839844V2.20834H2.51419L7.45586 14.0677C7.53501 14.2575 7.66854 14.4195 7.83963 14.5335C8.01073 14.6475 8.21173 14.7084 8.41732 14.7083H16.7507C17.185 14.7083 17.5736 14.4385 17.7267 14.0333L20.8517 5.70001C20.9108 5.54232 20.9307 5.37266 20.9098 5.20558C20.889 5.03849 20.8279 4.87895 20.7319 4.74063ZM16.0288 12.625H9.11211L6.50794 6.375H18.3725L16.0288 12.625Z" fill="white"/>
+                                            <path d="M8.9375 18.875C9.80044 18.875 10.5 18.1754 10.5 17.3125C10.5 16.4496 9.80044 15.75 8.9375 15.75C8.07456 15.75 7.375 16.4496 7.375 17.3125C7.375 18.1754 8.07456 18.875 8.9375 18.875Z" fill="white"/>
+                                            <path d="M16.2305 18.875C17.0934 18.875 17.793 18.1754 17.793 17.3125C17.793 16.4496 17.0934 15.75 16.2305 15.75C15.3675 15.75 14.668 16.4496 14.668 17.3125C14.668 18.1754 15.3675 18.875 16.2305 18.875Z" fill="white"/>
+                                        </svg>  
+                                        В КОРЗИНУ
+                                    </button>
+                                    <span>
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 4L4 7L9 1" stroke="#FF7800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        В наличии
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="color-selection">
+                                <div class="color-selection-header">
+                                    <p>Цвет: <span class="selected-color">Серый</span></p>
+                                </div>
+                                <div class="color-tabs">
+                                    <ul class="nav nav-tabs" id="colorsTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="standartTab" data-toogle="tab" href="#standart" role="tab" aria-controls="standart" aria-selected="false">Серия Стандарт</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profiTab" data-toogle="tab" href="#profi" role="tab" aria-controls="profi" aria-selected="false">Серия профи</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="colorMixTab" data-toogle="tab" href="#colorMix" role="tab" aria-controls="colorMix" aria-selected="false">Серия Color Mix</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="exclusiveTab" data-toogle="tab" href="#exclusive" role="tab" aria-controls="exclusive" aria-selected="trrue">Серия Эксклюзив</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="colorTabContent">
+                                        <div class="tab-pane fade" id="standart" role="tabpanel" aria-labelledby="standartTab"></div>
+                                        <div class="tab-pane fade" id="profi" role="tabpanel" aria-labelledby="profiTab"></div>
+                                        <div class="tab-pane fade" id="colorMix" role="tabpanel" aria-labelledby="colorMixTab"></div>
+                                        <div class="tab-pane fade show active" id="exclusive" role="tabpanel" aria-labelledby="exclusiveTab"></div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <footer class="footer">
+        <div class="container-xxl ">
+            <div class="footer-logo "> <img src="./img/logo.svg " alt=" "> </div>
+            <div class="footer-top row justify-content-between align-items-start ">
+                <div class="footer-info col-4 col-sm-12 ">
+                    <div class="footer-info-item footer-info-address ">г. Москва, Чермянский проезд, дом 7, офис 2111 (1-й этаж)
+                    </div> <a href="tel:4951500991 " class="footer-info-item footer-info-phone ">(495) 150-09-91</a>
+                    <div class="footer-info-item footer-info-occupy ">Наши менеджеры работают:
+                        <br> <span>Пн-пт c 8.30 до 19.00</span> <br><span>В субботу</span> приём только по предварительной записи.
+                        <br> <span>Воскресенье</span> - выходной.
+                        <div class="footer-info-order "> Заказы через сайт принимаются круглосуточно и без выходных.
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-items col d-flex justify-content-around ">
+                    <div class="footer-item footer-item-1 col ">
+                        <h5 class="footer-item-title ">Каталог</h5>
+                        <ul class="footer-list ">
+                            <li><a href="# ">Тротуарная плитка</a></li>
+                            <li><a href="# ">Бордюрный камень</a></li>
+                            <li><a href="# ">Вибропресованные ступени</a></li>
+                            <li><a href="# ">Водоотводные лотки</a></li>
+                            <li><a href="# ">Дренажные лотки</a></li>
+                            <li><a href="# ">Гранитные изделия для дорог</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item footer-item-2 col ">
+                        <h5 class="footer-item-title ">Покупателям</h5>
+                        <ul class="footer-list ">
+                            <li><a href="# ">Акции</a></li>
+                            <li><a href="# ">Распродажа</a></li>
+                            <li><a href="# ">Прайс-листы</a></li>
+                            <li><a href="# ">О компании</a></li>
+                            <li><a href="# ">Галерея</a></li>
+                            <li><a href="# ">Услуги</a></li>
+                            <li><a href="# ">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social col-3 col-sm-12 ">
+                    <div class="footer-social-company ">© «Градди» — Тротуарная плитка в Москве, 1995–2022 г.</div>
+                    <ul class="footer-social-list d-flex align-items-center ">
+                        <li>
+                            <a href="# "> <img src="./img/footer-social-1.svg " alt=" "> </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="./img/footer-social-2.svg " alt=" "> </a>
+                        </li>
+                        <li>
+                            <a href="# "> <img src="./img/footer-social-3.svg " alt=" ">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom row d-flex justify-content-center align-items-center ">
+                <a href="# " class="footer-bottom-policy col-4 col-sm-5 ">Политика конфиденциальности персональных
+                    данных</a> <a href="# " class="footer-bottom-map col-2 ">Карта сайта</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.min.js "></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+    <script src="./js/script.js "></script>
+    <script src="./js/productCard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+</body>
