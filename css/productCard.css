@@ -25,7 +25,7 @@
 
 .item-image .container-xxl {    
     position: relative;
-    width: 100%;
+    width: 90%;
 }
 
 .image-wrapper {
@@ -748,5 +748,128 @@ input[type=number]::-webkit-outer-spin-button {
 @media (max-width:450px) {
     .tab-right-item {
         width: 50%;
+    }
+
+    .content-footer button {
+        width: 100%;
+    }
+
+    .container-xxl h2 {
+        font-size: 20px;
+    }
+
+    .image-wrapper {
+        height: 335px;
+    }
+}
+
+@media (max-width: 410px) {
+    .breadcrumbs-list li a {
+        font-size: 13px;
+    }
+
+    .products-card-name, .products-card-pricenew {
+        font-size: 11px;
+    }
+
+    .products-card-priceold {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 376px) {
+    .item-image .container-xxl {
+        width: 90%;
+    }
+
+    .content-top-left-item {
+        width: 110%;
+    }
+
+    .image-wrapper img {
+        height: 175px;
+    }
+
+    .image-wrapper {
+        height: 268px;
+    }
+
+    .middle-tab .nav-link:nth-child(3) {
+        text-align: right;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .middle-tab .nav {
+        justify-content: space-between;
+    }
+
+    .middle-tab .nav-link:nth-child(2) {
+        padding-right: 0;
+        width: 50%;
+    }
+
+    .middle-tab .tab-content ul {
+        font-size: 13px;
+    }
+
+    .middle-tab nav a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 321px) {
+    .container-xxl h2 {
+        font-size: 15px;
+    }
+    .agreement input + label::before {
+        margin-left: 0;
+    }
+
+    .content-top-left-item {
+        width: 112%;
+    }
+
+    .item-image .container-xxl {
+        width: 92%;
+    }
+
+    .middle-tab .nav-link:nth-child(2) {
+        padding-left: 0;
+    }
+
+    .tab-right-item {
+        width: 58%;
+    }
+
+    .middle-tab .tab-content ul {
+        font-size: 10px;
+    }
+
+    .middle-tab nav a {
+        font-size: 11px;
+    }
+
+    .color-tabs .nav-link {
+        font-size: 10px;
+    }
+
+    .buy-form .input-group {
+        width: 120px;
+    }
+
+}
+
+@media (max-width: 281px) {
+    .container-xxl h2 {
+        font-size: 13px;
+    }
+
+    .content-top-left-item {
+        width: 114%;
+    }
+
+    .buy-form .input-group {
+        width: 105px;
     }
 }

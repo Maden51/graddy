@@ -29,7 +29,7 @@ const swiperImages = new Swiper('.images-wrapper', {
             spaceBetween: 9,
         },
         280: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 9,
         }
     }
@@ -238,11 +238,11 @@ const swiperProducts2 = new Swiper('.products-wrapper-2', {
         },
         375: {
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 17,
         },
         280: {
-            slidesPerView: 1.5,
-            spaceBetween: 20,
+            slidesPerView: 1,
+            spaceBetween: 17,
         }
     }
 });
@@ -273,11 +273,11 @@ const swiperProducts3 = new Swiper('.products-wrapper-3', {
         },
         375: {
             slidesPerView: 2,
-            spaceBetween: 10,
+            spaceBetween: 17,
         },
         280: {
-            slidesPerView: 1.5,
-            spaceBetween: 20,
+            slidesPerView: 1,
+            spaceBetween: 17,
         }
     }
 });
