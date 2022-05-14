@@ -47,6 +47,10 @@
     font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
+.top-right-title {
+    margin-top: -1px;
+}
+
 .top-right-title::after {
     content: '';
     width: 100%;
@@ -524,6 +528,7 @@ input[type=number]::-webkit-outer-spin-button {
     top: 100%;
     left: -75%;
     display: flex;
+    overflow:hidden;
 }
 
 .color-popup .left-part {
