@@ -4,7 +4,7 @@
 }
 
 .image-card {
-    max-width: 92px;
+    min-width: 55px;
     height: 100%;
 }
 
@@ -20,7 +20,7 @@
 
 .item-image .container-xxl {
     position: relative;
-    width: 90%;
+    width: 100%;
 }
 
 .image-wrapper {
@@ -634,9 +634,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (max-width: 800px) {
-    .item-image .container-xxl {
-        width: 60%;
-    }
     .content-top-left-item {
         width: 100%;
     }
@@ -703,12 +700,6 @@ input[type=number]::-webkit-outer-spin-button {
 @media (max-width: 650px) {
     .mobile-list-625px {
         display: list-item;
-    }
-}
-
-@media (max-width: 575px) {
-     .item-image .container-xxl {
-        width: 85%;
     }
 }
 
