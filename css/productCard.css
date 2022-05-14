@@ -13,6 +13,10 @@
     max-height: 341px;
 }
 
+.content-item {
+    overflow-x: hidden;
+}
+
 .image-card img {
     width: 100%;
     height: 100%;
