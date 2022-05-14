@@ -234,7 +234,7 @@
             </nav>
         </div>
     </div>
-    <section class="content">
+    <section class="content productCard-content">
         <div class="container-xxl">
             <div class="breadcrumbs">
                 <ul class="breadcrumbs-list d-flex align-items-center justify-content-center">
@@ -251,11 +251,11 @@
                         <a href="#">Прямоугольная тротуарная плитка</a>
                     </li>
                     <li>
-                        <span>Акции</span>
+                        <span>Паркет 300х100х80</span>
                     </li>
                 </ul>
             </div>
-            <h1 class="title">паркет 300х100х80</h1>
+            <h1 class="title">паркет<br> 300х100х80</h1>
             <div class="content-item">
                 <div class="content-top d-flex">
                     <div class="content-top-left-item">
@@ -266,7 +266,7 @@
                             <div class="image-title">НАЗВАНИЕ, ЗАГОЛОВОК</div>
                             <div class="container-xxl">
                                 <div class="images-wrapper swiper ">
-                                    <div class="images-cards swiper-wrapper d-flex align-items-stretch justify-content-between">
+                                    <div class="images-cards swiper-wrapper d-flex align-items-stretch">
                                         <a href="img/productCard/Group 823.png" class="image-card swiper-slide" data-fancybox="image-gallery">
                                             <div class="image-card-img ">
                                                 <img src="./img/productCard/Group 823.png" alt="" >
@@ -312,11 +312,11 @@
                             <div class="form-main d-flex">
                                 <div>
                                     <label for="meters">м²</label>
-                                    <div class="input-group mb3">
+                                    <div class="input-group mb3 meters-control">
                                         <div class="input-group-prepend">
                                             <button class="btn btn-outline-secondary btn-minus" type="button">-</button>
                                         </div>
-                                        <input type="number" class="form-control" placeholder="30" name="meters" id="meters">
+                                        <input type="number" class="form-control" name="meters" id="meters" value="30">
                                         <div class="input-group-append">
                                             <button class="btn btn-outline-secondary btn-plus" type="button">+</button>
                                         </div>
@@ -325,30 +325,34 @@
                                 </div>
                                 <div>
                                     <label for="count">поддоны</label>
-                                    <div class="input-group mb3">
+                                    <div class="input-group mb3 count-control">
                                         <div class="input-group-prepend">
                                             <button class="btn btn-outline-secondary btn-minus" type="button">-</button>
                                         </div>
-                                        <input type="number" class="form-control" placeholder="3" name="count" id="count">
+                                        <input type="number" class="form-control" value="3" name="count" id="count">
                                         <div class="input-group-append">
                                             <button class="btn btn-outline-secondary btn-plus" type="button">+</button>
                                         </div>
                                     </div>
                                     <span>Кол-во поддонов</span>
                                 </div>
-                                <div>
+                                <div class="desktop-summary">
                                     <label>общее кол-во:</label>
                                     <div class="summary">34.56 м2</div>
                                 </div>
                             </div>
                             <div class="form-footer">
+                                <div class="mob-summary">
+                                    <label>общее кол-во:</label>
+                                    <div class="summary">34.56 м2</div>
+                                </div>
                                 <div>
                                     <label>сумма:</label>
                                     <div class="summary">
                                         33 869.00 ₽
                                     </div>
                                 </div>
-                                <div class="form-btn d-flex align-items-center">
+                                <div class="form-btn d-flex align-items-center desktop-button">
                                     <button type="button" class="cart-btn">
                                         <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M20.7319 4.74063C20.6361 4.60216 20.5081 4.48899 20.359 4.41079C20.2099 4.3326 20.044 4.29173 19.8757 4.29167H5.63919L4.43711 1.40625C4.27949 1.02628 4.0126 0.701659 3.67026 0.473558C3.32792 0.245456 2.92556 0.124145 2.51419 0.125005H0.0839844V2.20834H2.51419L7.45586 14.0677C7.53501 14.2575 7.66854 14.4195 7.83963 14.5335C8.01073 14.6475 8.21173 14.7084 8.41732 14.7083H16.7507C17.185 14.7083 17.5736 14.4385 17.7267 14.0333L20.8517 5.70001C20.9108 5.54232 20.9307 5.37266 20.9098 5.20558C20.889 5.03849 20.8279 4.87895 20.7319 4.74063ZM16.0288 12.625H9.11211L6.50794 6.375H18.3725L16.0288 12.625Z" fill="white"/>
@@ -366,22 +370,22 @@
                                 </div>
                             </div>
                             <div class="color-selection">
-                                <div class="color-selection-header">
+                                <div class="color-selection-header desktop">
                                     <p>Цвет: <span class="selected-color">Серый</span></p>
                                 </div>
                                 <div class="color-tabs">
                                     <ul class="nav nav-tabs" id="colorTab" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Серия Стандарт</a>
+                                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span class="desktop-tab-title">Серия Стандарт</span><span class="mob-tab-title">Стандарт</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Серия профи</a>
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><span class="desktop-tab-title">Серия профи</span><span class="mob-tab-title">Профи</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Серия Color Mix</a>
+                                            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false"><span class="desktop-tab-title">Серия Color Mix</span><span class="mob-tab-title">Color Mix</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Серия Эксклюзив</a>
+                                            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false"><span class="desktop-tab-title">Серия Экскюзив</span><span class="mob-tab-title">Экскюзив</span></a>
                                         </li>
                                     </ul>
                                     <!-- Tab panes -->
@@ -550,7 +554,7 @@
                                         </div>
                                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                             <div class="tab-title">гравийный щебень</div>
-                                            <div class="tab-colors-1 d-flex align-items-center flex-wrap">
+                                            <div class="tab2-colors-1 d-flex align-items-center flex-wrap">
                                                 <div class="tab-color color-1"></div>
                                                 <div class="tab-color color-2"></div>
                                                 <div class="tab-color color-3"></div>
@@ -590,7 +594,7 @@
                                                 <div class="tab-color color-12 hidden"></div>
                                             </div>
                                             <div class="tab-title">гранитный отсев</div>
-                                            <div class="tab-colors-2 d-flex align-items-center flex-wrap">
+                                            <div class="tab2-colors-2 d-flex align-items-center flex-wrap">
                                                 <div class="tab-color color-1"></div>
                                                 <div class="tab-color color-2"></div>
                                                 <div class="tab-color color-3"></div>
@@ -630,7 +634,7 @@
                                                 <div class="tab-color color-12 hidden"></div>
                                             </div>
                                             <div class="tab-title">кварцитный отсев</div>
-                                            <div class="tab-colors-3 d-flex align-items-center flex-wrap">
+                                            <div class="tab2-colors-3 d-flex align-items-center flex-wrap">
                                                 <div class="tab-color color-1"></div>
                                                 <div class="tab-color color-2"></div>
                                                 <div class="tab-color color-3"></div>
@@ -670,7 +674,7 @@
                                                 <div class="tab-color color-12 hidden"></div>
                                             </div>
                                             <div class="tab-title">под гранит</div>
-                                            <div class="tab-colors-4 d-flex align-items-center flex-wrap">
+                                            <div class="tab2-colors-4 d-flex align-items-center flex-wrap">
                                                 <div class="tab-color color-1"></div>
                                                 <div class="tab-color color-2"></div>
                                                 <div class="tab-color color-3"></div>
@@ -712,7 +716,7 @@
                                         </div>
                                         <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
                                             <div class="tab-title">гравийный щебень</div>
-                                            <div class="tab-colors-1 d-flex align-items-center flex-wrap">
+                                            <div class="tab3-colors-1 d-flex align-items-center flex-wrap">
                                                 <div class="tab-color color-1"></div>
                                                 <div class="tab-color color-2"></div>
                                                 <div class="tab-color color-3"></div>
@@ -752,7 +756,7 @@
                                                 <div class="tab-color color-12 hidden"></div>
                                             </div>
                                             <div class="tab-title">гранитный отсев</div>
-                                            <div class="tab-colors-2 d-flex align-items-center flex-wrap">
+                                            <div class="tab3-colors-2 d-flex align-items-center flex-wrap">
                                                 <div class="tab-color color-1"></div>
                                                 <div class="tab-color color-2"></div>
                                                 <div class="tab-color color-3"></div>
@@ -792,7 +796,7 @@
                                                 <div class="tab-color color-12 hidden"></div>
                                             </div>
                                             <div class="tab-title">кварцитный отсев</div>
-                                            <div class="tab-colors-3 d-flex align-items-center flex-wrap">
+                                            <div class="tab3-colors-3 d-flex align-items-center flex-wrap">
                                                 <div class="tab-color color-1"></div>
                                                 <div class="tab-color color-2"></div>
                                                 <div class="tab-color color-3"></div>
@@ -832,7 +836,7 @@
                                                 <div class="tab-color color-12 hidden"></div>
                                             </div>
                                             <div class="tab-title">под гранит</div>
-                                            <div class="tab-colors-4 d-flex align-items-center flex-wrap">
+                                            <div class="tab3-colors-4 d-flex align-items-center flex-wrap">
                                                 <div class="tab-color color-1"></div>
                                                 <div class="tab-color color-2"></div>
                                                 <div class="tab-color color-3"></div>
@@ -874,7 +878,7 @@
                                         </div>
                                         <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
                                             <div class="tab-title">гравийный щебень</div>
-                                            <div class="tab-colors-1 d-flex align-items-center flex-wrap">
+                                            <div class="tab4-colors-1 d-flex align-items-center flex-wrap">
                                                 <div class="tab-color color-1"></div>
                                                 <div class="tab-color color-2"></div>
                                                 <div class="tab-color color-3"></div>
@@ -914,7 +918,7 @@
                                                 <div class="tab-color color-12 hidden"></div>
                                             </div>
                                             <div class="tab-title">гранитный отсев</div>
-                                            <div class="tab-colors-2 d-flex align-items-center flex-wrap">
+                                            <div class="tab4-colors-2 d-flex align-items-center flex-wrap">
                                                 <div class="tab-color color-1"></div>
                                                 <div class="tab-color color-2"></div>
                                                 <div class="tab-color color-3"></div>
@@ -954,7 +958,7 @@
                                                 <div class="tab-color color-12 hidden"></div>
                                             </div>
                                             <div class="tab-title">кварцитный отсев</div>
-                                            <div class="tab-colors-3 d-flex align-items-center flex-wrap">
+                                            <div class="tab4-colors-3 d-flex align-items-center flex-wrap">
                                                 <div class="tab-color color-1"></div>
                                                 <div class="tab-color color-2"></div>
                                                 <div class="tab-color color-3"></div>
@@ -994,7 +998,7 @@
                                                 <div class="tab-color color-12 hidden"></div>
                                             </div>
                                             <div class="tab-title">под гранит</div>
-                                            <div class="tab-colors-4 d-flex align-items-center flex-wrap">
+                                            <div class="tab4-colors-4 d-flex align-items-center flex-wrap">
                                                 <div class="tab-color color-1"></div>
                                                 <div class="tab-color color-2"></div>
                                                 <div class="tab-color color-3"></div>
@@ -1035,6 +1039,25 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="color-selection-header mobile">
+                                    <p>Цвет: <span class="selected-color">Серый</span></p>
+                                </div>
+                                <div class="form-btn  mobile-button">
+                                    <button type="button" class="cart-btn">
+                                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.7319 4.74063C20.6361 4.60216 20.5081 4.48899 20.359 4.41079C20.2099 4.3326 20.044 4.29173 19.8757 4.29167H5.63919L4.43711 1.40625C4.27949 1.02628 4.0126 0.701659 3.67026 0.473558C3.32792 0.245456 2.92556 0.124145 2.51419 0.125005H0.0839844V2.20834H2.51419L7.45586 14.0677C7.53501 14.2575 7.66854 14.4195 7.83963 14.5335C8.01073 14.6475 8.21173 14.7084 8.41732 14.7083H16.7507C17.185 14.7083 17.5736 14.4385 17.7267 14.0333L20.8517 5.70001C20.9108 5.54232 20.9307 5.37266 20.9098 5.20558C20.889 5.03849 20.8279 4.87895 20.7319 4.74063ZM16.0288 12.625H9.11211L6.50794 6.375H18.3725L16.0288 12.625Z" fill="white"/>
+                                            <path d="M8.9375 18.875C9.80044 18.875 10.5 18.1754 10.5 17.3125C10.5 16.4496 9.80044 15.75 8.9375 15.75C8.07456 15.75 7.375 16.4496 7.375 17.3125C7.375 18.1754 8.07456 18.875 8.9375 18.875Z" fill="white"/>
+                                            <path d="M16.2305 18.875C17.0934 18.875 17.793 18.1754 17.793 17.3125C17.793 16.4496 17.0934 15.75 16.2305 15.75C15.3675 15.75 14.668 16.4496 14.668 17.3125C14.668 18.1754 15.3675 18.875 16.2305 18.875Z" fill="white"/>
+                                        </svg>  
+                                        В КОРЗИНУ
+                                    </button>
+                                    <span>
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 4L4 7L9 1" stroke="#FF7800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        В наличии
+                                    </span>
                                 </div>
                             </div>
                         </form>
@@ -1104,9 +1127,12 @@
                                                 <li>
                                                     B btb -4.0
                                                 </li>
+                                                <li class="mobile-list-765px"><br>
+                                                </li>
                                                 <li>
                                                     6% (W 6)
                                                 </li>
+                                                <li class="mobile-list-625px"><br>
                                                 <li>
                                                     17608-91
                                                 </li>
@@ -1402,15 +1428,20 @@
                         <div class="form-right-part d-flex flex-column">
                             <input type="text" placeholder="Имя" name="name" id="input-name" />
                             <input type="email" placeholder="E-mail" name="email" id="input-email" />
-                            <div class="agreement">
+                            <div class="agreement desktop-agreement">
                                 <input type="checkbox"  name="checkbox" id="agreement" value="agreement"/>
                                 <label for="agreement">Я согласен с условиями политики конфиденциальности*</label>
                             </div>
-                            <button type="submit" class="btn">Отправить</button>
+                            <button type="submit" class="btn desktop-footer-button">Отправить</button>
                         </div>
                         <div class="form-left-part">
                             <textarea placeholder="Сообщение" rows="3" name="textarea" id="input-message"></textarea>
                         </div>
+                        <div class="agreement mobile-agreement">
+                            <input type="checkbox"  name="checkbox" id="mob-agreement" value="mob-agreement"/>
+                            <label for="mob-agreement">Я согласен с условиями политики конфиденциальности*</label>
+                        </div>
+                        <button type="submit" class="btn mobile-footer-button">Отправить</button>
                     </form>
                 </div>
             </div>
