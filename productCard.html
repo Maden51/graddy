@@ -353,7 +353,8 @@
                                     </div>
                                 </div>
                                 <div class="form-btn d-flex align-items-center desktop-button">
-                                    <button type="button" class="cart-btn">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="cart-btn" data-toggle="modal" data-target="#cartModal">
                                         <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M20.7319 4.74063C20.6361 4.60216 20.5081 4.48899 20.359 4.41079C20.2099 4.3326 20.044 4.29173 19.8757 4.29167H5.63919L4.43711 1.40625C4.27949 1.02628 4.0126 0.701659 3.67026 0.473558C3.32792 0.245456 2.92556 0.124145 2.51419 0.125005H0.0839844V2.20834H2.51419L7.45586 14.0677C7.53501 14.2575 7.66854 14.4195 7.83963 14.5335C8.01073 14.6475 8.21173 14.7084 8.41732 14.7083H16.7507C17.185 14.7083 17.5736 14.4385 17.7267 14.0333L20.8517 5.70001C20.9108 5.54232 20.9307 5.37266 20.9098 5.20558C20.889 5.03849 20.8279 4.87895 20.7319 4.74063ZM16.0288 12.625H9.11211L6.50794 6.375H18.3725L16.0288 12.625Z" fill="white"/>
                                             <path d="M8.9375 18.875C9.80044 18.875 10.5 18.1754 10.5 17.3125C10.5 16.4496 9.80044 15.75 8.9375 15.75C8.07456 15.75 7.375 16.4496 7.375 17.3125C7.375 18.1754 8.07456 18.875 8.9375 18.875Z" fill="white"/>
@@ -361,13 +362,60 @@
                                         </svg>  
                                         В КОРЗИНУ
                                     </button>
-                                    <span>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Корзина(12)</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="cart-list">
+                                                    <div class="cart-item">
+                                                        <img src="./img/productCard/modal-cart-image.png" alt="cart-image" />
+                                                        <div class="cart-item-title">Плита укрепления откоса с петлями П-1</div>
+                                                        <div class="input-group-cart-item-control">
+                                                            <div class="input-group mb2 cart-item-control">
+                                                                <div class="input-group-prepend">
+                                                                    <button class="btn btn-outline-secondary btn-minus" type="button">-</button>
+                                                                </div>
+                                                                <input type="number" class="form-control" name="item-count" id="item-count" value="120">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-outline-secondary btn-plus" type="button">+</button>
+                                                                </div>
+                                                                <label for="item-count">м²</label>
+                                                            </div>
+                                                            <span>Удалить</span>
+                                                        </div>
+                                                        <div class="cart-one-item-cost">1050₽</div>
+                                                        <div class="cart-all-items-cost">15050₽</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div class="cart-total-cost">
+                                                    <span>Итого</span>
+                                                    <span>45000₽</span>
+                                                </div>
+                                                <div class="modal-control">
+                                                    <button type="button" class="go-to-cart-btn" data-dismiss="modal">Оформление заказа</button>
+                                                    <button type="button" class="go-to-buy-btn">Продолжить покупки</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <span class="have-in-store">
                                         <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M1 4L4 7L9 1" stroke="#FF7800" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                         В наличии
                                     </span>
                                 </div>
+                                
                             </div>
                             <div class="color-selection">
                                 <div class="color-selection-header desktop">

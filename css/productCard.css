@@ -1,3 +1,7 @@
+.body {
+    overflow-x: hidden;
+}
+
 .content-top-left-item {
     width: 49%;
     margin-right: 2%;
@@ -11,10 +15,6 @@
 .image-wrapper img {
     max-width: 100%;
     max-height: 341px;
-}
-
-.content-item {
-    overflow-x: hidden;
 }
 
 .image-card img {
@@ -131,6 +131,112 @@
     opacity: 0.5;
 }
 
+.form-btn .close {
+    border: none;
+    background-color: transparent;
+}
+
+.form-btn .modal-header {
+    border: none;
+    padding: 0;
+    margin-bottom: 31px;
+}
+
+.form-btn .modal-content {
+    border-radius: 0;
+    padding: 13px;
+}
+
+.form-btn .modal-body {
+    padding: 0;
+}
+
+.form-btn .modal-footer {
+    border-top: none;
+    justify-content: start;
+}
+
+.form-btn .cart-list {
+    font-feature-settings: 'tnum' on, 'lnum' on;
+}
+
+.form-btn .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-btn .cart-item img {
+    margin-right: 13px;
+}
+
+.form-btn .cart-item-title {
+    font-size: 16px;
+    line-height: 114.9%;
+    margin-right: 22px;
+}
+
+.form-btn .cart-item-control {
+    margin-right: 37px;
+    height: 24px;
+    margin-bottom: -5px;
+    width: 106px;
+}
+
+.form-btn .cart-total-cost span {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.form-btn .cart-total-cost {
+    display: flex;
+    gap: 102px;
+}
+.input-group-cart-item-control .input-group {
+    flex-wrap: nowrap;
+}
+
+.input-group-cart-item-control span  {
+    font-size: 12px;
+    text-decoration-line: underline;
+    opacity: 0.5;
+}
+
+.input-group-cart-item-control button {
+    padding: 0.2rem 0.4rem 0.05rem ;
+    vertical-align: unset;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.form-btn .cart-one-item-cost {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 80px;
+}
+
+.form-btn .cart-all-items-cost {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.input-group-cart-item-control input {
+    padding: 0;
+}
+
+.input-group-cart-item-control .btn-plus {
+    margin-right: 5px;
+}
+
+.input-group.cart-item-control label {
+    font-size: 12px;
+    margin-left: 5px;
+    text-transform: none;
+    align-self: center;
+}
+
 .summary {
     font-size: 24px;
     line-height: 29px;
@@ -148,7 +254,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 13px;
 }
 
-.form-btn button {
+.form-btn .cart-btn{
     width: 294px;
     background-color: #FF7800;
     padding: 12px 30px;
@@ -173,7 +279,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 10px;
 }
 
-.form-btn span {
+.form-btn .have-in-store {
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
