@@ -347,6 +347,31 @@ cartResetBtn.addEventListener('click', function(e) {
     cartCountInput.value = 0;
 })
 
+const mobCartCountBox = document.querySelector('.mob-cart-item-control');
+const mobCartCountInput = mobCartCountBox.querySelector('input');
+const mobCartCountPlus = mobCartCountBox.querySelector('.btn-plus');
+const mobCartCountMinus = mobCartCountBox.querySelector('.btn-minus');
+const mobCartResetBtn = document.querySelector('.mob-cart-item-reset')
+
+mobCartCountMinus.addEventListener('click', function(e) {
+    e.preventDefault();   
+    if (mobCartCountInput.value > 0) {
+        mobCartCountInput.value -= 1
+    } else {
+        mobCartCountInput.value = 0
+    }
+})
+
+mobCartCountPlus.addEventListener('click', function(e) {
+    e.preventDefault();   
+    mobCartCountInput.value = Number(mobCartCountInput.value) + 1;
+})
+
+mobCartResetBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    mobCartCountInput.value = 0;
+})
+
 //popup on colors
 
 const colorDivs = document.querySelectorAll('.tab-color');
