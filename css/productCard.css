@@ -198,6 +198,23 @@
     width: 106px;
 }
 
+.cart-mob-menu .mob-cart-item-control {
+    height: 24px;
+    width: 106px;
+}
+
+.mob-cart-item-control input {
+    padding: 0;
+}
+
+.mob-cart-item-control input:focus {
+    box-shadow: none;
+}
+
+.mob-cart-item-control button:focus {
+    box-shadow: none;
+}
+
 .form-btn .cart-total-cost span {
     font-size: 18px;
     font-weight: 700;
@@ -208,7 +225,7 @@
     margin-bottom: 14px;
 }
 
-.form-btn .modal-title {
+.form-btn .modal-title, .cart-mob-title {
     font-size: 20px;
     line-height: 150%;
     font-family: "El Messiri";
@@ -249,7 +266,7 @@
     background: none;
 }
 
-.input-group-cart-item-control .input-group {
+.input-group-cart-item-control .input-group, .mob-input-group-cart-item-control .input-group {
     flex-wrap: nowrap;
 }
 
@@ -260,7 +277,7 @@
     cursor: pointer;
 }
 
-.input-group-cart-item-control button {
+.input-group-cart-item-control button, .mob-input-group-cart-item-control button {
     padding: 0.2rem 0.4rem 0.05rem ;
     vertical-align: unset;
     line-height: 1;
@@ -360,6 +377,151 @@ input[type=number]::-webkit-outer-spin-button {
 
 .form-btn span svg {
     margin-right: 6px;
+}
+
+.cart-mob-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(-100%);
+    z-index: 999;
+    background: rgba(235, 245, 246, 0.9);
+    backdrop-filter: blur(9px);
+    overflow: auto;
+    padding: 15px 13px 18px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+}
+
+.cart-mob-menu.active {
+    transform: translateX(0);
+    transition: -webkit-transform 0.3s ease;
+    -webkit-transition: -webkit-transform 0.3s ease;
+}
+
+.cart-close-btn {
+    background: transparent;
+    border: none;
+}
+
+.cart-mob-main {
+    margin-top: 24px;
+}
+
+.mob-item-title {
+    font-size: 16px;
+    line-height: 114.9%;
+    margin-bottom: 11px;
+}
+
+.mob-item-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 114.9%;
+}
+
+.mob-item-description {
+    margin-left: 13px;
+}
+
+.mob-item-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.mob-item-footer label {
+    text-transform: none;
+    font-size: 16px;
+    line-height: 114.9%;
+    font-weight: 400;
+}
+
+.cart-mob-menu .mob-summary span {
+    font-size: 16px;
+    line-height: 114.9%;
+}
+
+.mob-all-cost {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.mob-cart-item-control span {
+    font-size: 12px;
+    line-height: 114.9%;
+    align-self: center;
+}
+
+.mob-cart-item-control .input-group-append {
+    margin-right: 5px;
+}
+
+.mob-cart-item-reset {
+    font-size: 12px;
+    line-height: 114.9%;
+    opacity: 0.5;
+    text-decoration-line: underline;
+    margin-top: -2px;
+}
+
+.cart-mob-item::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #4c4c4c;
+    opacity: 0.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mob-cart-total-cost {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.mob-modal-control {
+    display: flex;
+    flex-direction: column;
+    margin-top: 21px;
+    text-align: center;
+    align-items: center;
+}
+
+.mob-modal-control button:nth-child(1) {
+    background-color: #FF7800;
+    color: #FFF;
+    padding: 10px 30px;
+    border: none;
+}
+
+.mob-modal-control button:nth-child(1):focus {
+    outline: 1px solid #363636;
+}
+
+.mob-modal-control button:nth-child(2) {
+    background: transparent;
+    border: none;
+    color: #4c4c4c;
+    margin-top: 15px;
+}
+
+.cart-mob-menu .container-xxl {
+    padding: 0;
+}
+
+.mob-modal-control button {
+    width: 100%;
 }
 
 .color-selection {
@@ -700,6 +862,13 @@ input[type=number]::-webkit-outer-spin-button {
 .mobile-footer-button, .mobile-list-765px, .mobile-list-625px {
     display: none ;
 }
+.mobile-button span {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    line-height: 14px;
+}
 
 .color-popup {
     position: absolute;
@@ -812,6 +981,10 @@ input[type=number]::-webkit-outer-spin-button {
     .content-top-left-item {
         width: 80%;
     }
+
+    .cart-mob-menu {
+        display: block;
+    }
 }
 
 @media (max-width: 870px) {
@@ -922,6 +1095,12 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
+@media (min-width:500px) {
+    .mob-modal-control button {
+        width: 50%;
+    }
+}
+
 @media (max-width:450px) {
     .tab-right-item {
         width: 50%;
@@ -993,9 +1172,20 @@ input[type=number]::-webkit-outer-spin-button {
     .middle-tab nav a {
         font-size: 12px;
     }
+
+    .mob-item-cost {
+        width: 45%;
+    }
+
+    .cart-mob-main .mob-summary {
+        width: 50%;
+    }
 }
 
 @media (max-width: 321px) {
+    .cart-mob-main .mob-summary {
+        width: 25%;
+    }
     .container-xxl h2 {
         font-size: 15px;
     }

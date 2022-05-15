@@ -371,3 +371,21 @@ colorDivs.forEach(element => {
         element.removeChild(popup);
     })
 });
+
+//cart-mob
+
+const cartMobBtn = document.querySelector('.form-btn.mobile-button');
+const cartMobDiv = document.querySelector('.cart-mob-menu');
+const cartMobCloseBtn = document.querySelector('.cart-close-btn');
+
+cartMobBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    cartMobDiv.classList.add('active');
+    document.body.classList.add('_lock')
+})
+
+cartMobCloseBtn.addEventListener('click', function(e) {
+    e.preventDefault()
+    cartMobDiv.classList.remove('active');
+    document.body.classList.remove('_lock')
+})

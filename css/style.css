@@ -1290,7 +1290,7 @@
         .news,
         .content,
         .company {
-            padding: 100px 0 50px;
+            padding: 100px 0 0;
         }
         .title {
             font-size: 30px!important;
