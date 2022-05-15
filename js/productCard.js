@@ -322,6 +322,31 @@ countPlus.addEventListener('click', function(e) {
     countInput.value = Number(countInput.value) + 1;
 })
 
+const cartCountBox = document.querySelector('.cart-item-control');
+const cartCountInput = cartCountBox.querySelector('input');
+const cartCountPlus = cartCountBox.querySelector('.btn-plus');
+const cartCountMinus = cartCountBox.querySelector('.btn-minus');
+const cartResetBtn = document.querySelector('.cart-item-reset')
+
+cartCountMinus.addEventListener('click', function(e) {
+    e.preventDefault();   
+    if (cartCountInput.value > 0) {
+        cartCountInput.value -= 1
+    } else {
+        cartCountInput.value = 0
+    }
+})
+
+cartCountPlus.addEventListener('click', function(e) {
+    e.preventDefault();   
+    cartCountInput.value = Number(cartCountInput.value) + 1;
+})
+
+cartResetBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    cartCountInput.value = 0;
+})
+
 //popup on colors
 
 const colorDivs = document.querySelectorAll('.tab-color');

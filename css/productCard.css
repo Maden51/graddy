@@ -134,6 +134,15 @@
 .form-btn .close {
     border: none;
     background-color: transparent;
+    padding: 0;
+}
+
+.form-btn .close:hover {
+    background: none;
+}
+
+.form-btn .close span {
+    font-size: 30px;
 }
 
 .form-btn .modal-header {
@@ -149,15 +158,20 @@
 
 .form-btn .modal-body {
     padding: 0;
+    min-height: 120px;
 }
 
 .form-btn .modal-footer {
     border-top: none;
     justify-content: start;
+    padding: 0;
 }
 
 .form-btn .cart-list {
     font-feature-settings: 'tnum' on, 'lnum' on;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .form-btn .cart-item {
@@ -174,6 +188,7 @@
     font-size: 16px;
     line-height: 114.9%;
     margin-right: 22px;
+    width: 29%;
 }
 
 .form-btn .cart-item-control {
@@ -190,8 +205,48 @@
 }
 
 .form-btn .cart-total-cost {
+    margin-bottom: 14px;
+}
+
+.form-btn .modal-title {
+    font-size: 20px;
+    line-height: 150%;
+    font-family: "El Messiri";
+    font-weight: 600;
+}
+
+.form-btn .modal-dialog {
+    max-width: 636px;
+}
+
+.form-btn .cart-total-cost {
     display: flex;
-    gap: 102px;
+    gap: 111px;
+}
+
+.form-btn .go-to-cart-btn {
+    background-color: #FF7800;
+    padding: 10px 30px;
+    color: #FFF;
+    border: none;
+    margin-right: 27px;
+}
+
+.form-btn .go-to-cart-btn:hover {
+    background-color: #ff7700c9;
+}
+
+.form-btn .go-to-cart-btn:focus {
+    outline: 1px solid #363636;
+}
+
+.form-btn .go-to-buy-btn {
+    background: transparent;
+    border: none;
+}
+
+.form-btn .go-to-buy-btn:hover {
+    background: none;
 }
 
 .input-group-cart-item-control .input-group {
@@ -202,6 +257,7 @@
     font-size: 12px;
     text-decoration-line: underline;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .input-group-cart-item-control button {
@@ -225,6 +281,11 @@
 
 .input-group-cart-item-control input {
     padding: 0;
+}
+
+.input-group-cart-item-control input:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .input-group-cart-item-control .btn-plus {
