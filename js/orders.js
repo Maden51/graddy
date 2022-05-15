@@ -42,7 +42,7 @@ const mobBtns = document.querySelectorAll('.mob-btn-counter');
 mobBtns.forEach(e => {
     e.addEventListener('click', function() {
         const direction = this.dataset.direction;
-        const inp = this.parentElement.closest('.form-control');
+        const inp = this.parentElement.parentElement.querySelector('.form-control');
         const currentValue = +inp.value;
         let newValue;
 
