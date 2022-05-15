@@ -40,7 +40,8 @@ window.addEventListener('scroll', function() {
 // Hide header with scroll
 
 /* catalog */
-function handleOpen() {
+function handleOpen(e) {
+    e.preventDefault();
     headerDrop.classList.add('is-active')
     headerSearch.classList.remove('is-active')
     headerPhonenumber.classList.remove('is-active')
@@ -71,6 +72,7 @@ function handleClose() {
 }
 
 catalogBtn.addEventListener('mouseenter', handleOpen);
+catalogBtn.addEventListener('click', handleOpen);
 
 header.addEventListener('mouseleave', handleClose);
 /* catalog */
@@ -203,3 +205,11 @@ const swiper = new Swiper(".swiper-main", {
     },
 });
 /* Swiper galleries */
+
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+    infinite: false,
+    backFocus: false,
+    trapFocus: false,
+    placeFocusBack: false,
+});

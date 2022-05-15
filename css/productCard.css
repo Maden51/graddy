@@ -193,6 +193,7 @@
     display: flex;
     gap: 102px;
 }
+
 .input-group-cart-item-control .input-group {
     flex-wrap: nowrap;
 }
