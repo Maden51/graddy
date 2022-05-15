@@ -381,7 +381,7 @@ colorDivs.forEach(element => {
         popup.className = 'color-popup';
         popup.innerHTML = `
             <div class="left-part">
-                <img src="../img/productCard/popup-image.svg" alt="" />
+                <img src="./img/productCard/popup-image.svg" alt="" />
             </div>
             <div class="right-part">
                 <div class="popup-title">Гранит Южно-Сультаевский</div>
@@ -395,7 +395,7 @@ colorDivs.forEach(element => {
         const popup = e.target.querySelector('.color-popup');
         element.removeChild(popup);
     })
-});
+}); 
 
 //cart-mob
 
