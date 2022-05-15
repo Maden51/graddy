@@ -1,0 +1,248 @@
+.mob-order-btn {
+    display: none;
+    background-color: #FF7800;
+    color: #FFF;
+    padding: 10px 30px;
+    width: 310px;
+    border: none;
+}
+
+.company-map iframe {
+    width: 500px;
+    height: 400px;
+}
+
+.orders-cart-total > div {
+    margin-bottom: 15px;
+}
+
+.orders-cart-total div p {
+    line-height: 150%;
+}
+
+.mob-orders-cart-items {
+    display: none;
+    color: #4c4c4c;
+}
+
+.mob-cart-item-control {
+    height: 24px;
+    width: 108px;
+}
+
+.mob-cart-item-control input {
+    text-align: center;
+}
+
+.mob-item-title {
+    font-size: 16px;
+    line-height: 114.9%;
+    margin-bottom: 11px;
+}
+
+.mob-item-description {
+    margin-left: 13px;
+}
+
+.mob-item-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.mob-all-cost {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.orders-form-item select {
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url('../img/orders/Vector\ 11.svg');
+    background-repeat: no-repeat;
+    background-position:
+        calc(100% - 12px) calc(1em - 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        100% 0;
+}
+
+.orders-form-item select:disabled {
+    /* opacity: 0.5; */
+}
+
+.orders-form-item select:focus {
+    outline: none;
+}
+
+/* adapive styles */
+
+@media (max-width: 1250px) {
+    .orders-forms {
+        flex-direction: column-reverse;
+    }
+    .order-btn {
+        display: none;
+    }
+
+    .orders-form {
+        margin-top: 25px;
+    }
+
+    .orders-form-item {
+        margin-bottom: 20px;
+    }
+
+    .orders-cart .orders-title {
+        font-size: 25px;
+    }
+
+    .mob-order-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .orders-cart-items, .orders-cart-title  {
+        display: none;
+    }
+
+    .mob-orders-cart-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .orders-item {
+        padding: 15px;
+    }
+
+    .company-map iframe {
+        width: 400px;
+    }
+
+    .orders-cart {
+        width: 100%;
+    }
+
+    .orders-form-item label input, .orders-delivery label select {
+        width: 400px;
+    }
+
+    .orders-form {
+        width: 100%;
+    }
+
+    .mob-orders-cart-items .mob-summary span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .orders-form-item select {
+        background-position: calc(100% - 12px) calc(1em - -3px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+    }
+    
+    .orders-form-item label input, .orders-delivery label select {
+        width: 310px;
+    }
+
+    .company-map iframe {
+        width: 100%
+    }
+
+    .orders-form-item {
+        width: 100%;
+    }
+
+    .orders-cart-total {
+        width: 100%;
+    }
+
+    .orders-delivery label select {
+        font-size: 14px;
+    }
+
+    .orders-cart-total > div {
+        margin-bottom: 6px;
+    }
+
+    .orders-cart-total p {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .orders-cart .orders-title {
+        font-size: 20px;
+    }
+
+    .mob-item-footer .mob-summary {
+        margin-right: 30%;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .orders-form-item select {
+        background-position:
+        calc(100% - 10px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        100% 0;
+    }
+    .mob-order-btn {
+        width: 100%;
+    }
+
+    .orders-form-item label input, .orders-delivery label select {
+        width: 275px;
+    }
+
+    .company-map iframe {
+        width: 100%;
+    }
+    .orders-delivery label select {
+        font-size: 12px;
+    }
+
+    .mob-item-description {
+        font-size: 13px;
+    }
+
+    .mob-order-btn {
+        font-size: 13px;
+    }
+
+    .mob-orders-cart-items .mob-item-cost {
+        width: 34%;
+    }
+    
+}
+
+@media (max-width: 340px) {
+    .mob-item-footer .mob-summary {
+        margin-right: 20%;
+    }
+
+    .mob-order-btn {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 300px) {
+    .mob-item-footer .mob-summary {
+        margin-right: 10%;
+    }
+
+    .orders-form-item label input, .orders-delivery label select {
+        width: 240px;
+    }
+
+    .orders-delivery label select {
+        font-size: 10px;
+    }
+}

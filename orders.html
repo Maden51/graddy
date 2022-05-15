@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graddy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/productCard.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/orders.css">
+    
+</head>
+
+<body class="body">
+    <header class="header" style="top: 0px">
+        <div class="container-xxl">
+            <div class="header-wrapper row d-flex justify-content-between align-items-center flex-nowrap">
+                <button class="header-mobile-burger col-sm-2">
+                    <img src="./img/menu-burger.svg" alt="">
+                </button>
+                <a href="#" class="header-logo col-xl-2 col-sm-3">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <div class="header-middle col-7">
+                    <ul class="header-list d-flex align-items-center flex-wrap">
+                        <li class="header-list-menus">
+                            <a href="#">Каталог товаров</a>
+                            <img src="./img/menu-arrow.svg" alt="">
+                        </li>
+                        <li>
+                            <a href="#">акции</a>
+                        </li>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">ИНФОРМАЦИЯ</a>
+                        </li>
+                        <li>
+                            <a href="#">уСЛУГИ</a>
+                        </li>
+                        <li>
+                            <a href="#">коНТАКТЫ</a>
+                        </li>
+                    </ul>
+                    <div class="header-search is-active">
+                        <img src="./img/search.svg" alt="">
+                        <input type="text">
+                    </div>
+                </div>
+                <a href="#" class="header-mobile-phone col-sm-1">
+                    <img src="./img/mobile-phone.svg" alt="">
+                </a>
+                <div class="header-infos col-2">
+                    <a href="tel:4951500991">(495) 150-09-91</a>
+                    <a href="tel:88001500991">8 (800) 150-09-91</a>
+                    <a class="is-active" href="tel:4951500991">(495) 150-09-91</a>
+                    <a class="header-infos-email is-active" href="mailto:zakaz@graddi.ru">zakaz@graddi.ru</a>
+                </div>
+            </div>
+            <ul class="header-dropdown justify-content-center">
+                <li class="header-dropdown-catalog col-2" style="width: 18%;">
+                    <h5>Каталог</h5>
+                    <a href=" # ">Распродажа</a>
+                    <a href="# ">Тротуарная плитка</a>
+                    <a href="# ">Бордюрный камень</a>
+                    <a href="# ">Вибропрессованные ступени</a>
+                    <a href="# ">Водоотводные лотки</a>
+                    <a href="# ">Дренажные лотки</a>
+                    <a href="# ">Грантинеы изделия для дорог</a>
+                </li>
+
+                <li class="header-dropdown-form col-3 ">
+                    <h5>Форма</h5>
+                    <div class="header-form-wrapper d-flex justify-content-between ">
+                        <div>
+                            <a href="# ">
+                                <img src="./img/header-form-1.svg " alt=" ">Квадрат
+                            </a>
+                            <a href="# ">
+                                <img src="./img/header-form-2.svg " alt=" ">Брусчатка
+                            </a>
+                            <a href="# ">
+                                <img src="./img/header-form-3.svg " alt=" ">Уголок
+                            </a>
+                            <a href="# ">
+                                <img src="./img/header-form-4.svg " alt=" ">Трамвайные плиты</a>
+                            <a href="# ">
+                                <img src="./img/header-form-5.svg " alt=" ">Ригель
+                            </a>
+                        </div>
+                        <div>
+                            <a href="# ">
+                                <img src="./img/header-form-6.svg " alt=" ">Новый город</a>
+                            <a href="# ">
+                                <img src="./img/header-form-7.svg " alt=" ">Классико
+                            </a>
+                            <a href="# ">
+                                <img src="./img/header-form-8.svg " alt=" ">Бавария
+                            </a>
+                            <a href="# ">
+                                <img src="./img/header-form-9.svg " alt=" ">Садовая
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="header-dropdown-color col-2 ">
+                    <h5>ЦВет</h5>
+                    <div class="header-color-wrapper ">
+                        <div>
+                            <button>
+                                <img src="./img/header-color-1.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-2.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-3.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-3.png " alt=" ">
+                            </button>
+                        </div>
+                        <div>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-3.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                        </div>
+                        <div>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-3.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                        </div>
+                        <div>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-3.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                            <button>
+                                <img src="./img/header-color-4.png " alt=" ">
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="mob-menu ">
+        <div class="container-xxl ">
+            <div class="mob-menu-top d-flex justify-content-between align-items-start ">
+                <a href="# " class="mob-menu-logo col-xs-1 ">
+                    <img src="./img/logo.svg " alt=" ">
+                </a>
+                <button class="menu-close-btn col-xs-1 ">
+                    <img src="./img/close.svg " alt=" ">
+                </button>
+            </div>
+            <div class="mob-search ">
+                <img src="./img/search.svg " alt=" ">
+                <input type="text ">
+            </div>
+            <nav class="mobile-menu ">
+                <ul>
+                    <li class="mobile-menu-drop ">
+                        <a href="# ">Каталог Товаров</a>
+                        <img src="./img/menu-arrow-dark.svg " alt=" ">
+                        <ul class="mobile-drop-list ">
+                            <li>
+                                <a href="# ">Каталог</a>
+                            </li>
+                            <li>
+                                <a href="# ">Форма</a>
+                            </li>
+                            <li>
+                                <a href="# ">Цвет</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="# ">Акции</a>
+                    </li>
+                    <li>
+                        <a href="# ">О компании</a>
+                    </li>
+                    <li>
+                        <a href="# ">ИНФОРМАЦИЯ</a>
+                    </li>
+                    <li>
+                        <a href="# ">уСЛУГИ</a>
+                    </li>
+                    <li>
+                        <a href="# ">коНТАКТЫ</a>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="orders">
+        <div class="container-xxl">
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs-list d-flex align-items-center justify-content-center">
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <span>О компании</span>
+                    </li>
+
+                </ul>
+            </div>
+            <h1 class="title">корзина</h1>
+            <div class="orders-item">
+                <h3 class="orders-title">Оформление заказа</h3>
+                <form class="orders-forms d-flex align-items-start justify-content-between">
+                    <div class="orders-form">
+                        <div class="orders-form-item">
+                            <label>
+                                <p>Имя и фамилия</p>
+                                <span>
+                                    Чтобы мы знали как в вам обращаться
+                                </span>
+                                <input type="text" placeholder="Иван Иванов">
+                            </label>
+                        </div>
+                        <div class="orders-form-item">
+                            <label>
+                                <p>E-Mail</p>
+                                <span>На него мы вышлем детали заказа </span>
+                                <input type="email" placeholder="crocotari@gmail.com">
+                            </label>
+                        </div>
+                        <div class="orders-form-item">
+                            <label>
+                                <p>
+                                    Телефон
+                                </p>
+                                <span>
+                                    Наш менеджер свяжется с вами после офрмления заказа
+                                </span>
+                                <input type="tel" placeholder="+7 999 999-99-99">
+                            </label>
+                        </div>
+                        <div class="orders-form-item orders-delivery">
+                            <label>
+                                <p>
+                                    Способ доставки
+                                </p>
+                                <select required id='select'>
+                                    <option selected disabled value="0">Выберите удобный
+                                        способ
+                                        доставки
+                                    </option>
+                                    <option value="1">Самовывоз</option>
+                                    <option value="2">Доставка</option>
+                                </select>
+                            </label>
+                            <p class="orders-delivery-text">*При выборе доставки с помощью Почты России, покупка возможна только по полной предоплате товара и оплаты доствки в размере 290 рублей. Оплата производится на нашем сайте после нажатия “Завершить оформление заказа”.</p>
+                        </div>
+                        <div class="company-map" style="display: none">
+                            <div>
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6d70eff4acb81481ba625a068d2d26a4ec4bd74f2ff82fbfc7c70c4e0cb6fbe4&amp;source=constructor"></iframe>
+                            </div>
+                        </div>
+                        <div class="orders-form-item orders-delivery-selected" style="display: none">
+                            <label>
+                                <p>Адрес доставки</p>
+                                <span>
+                                    Индекс
+                                </span>
+                                <input type="number" placeholder="123123">
+                                <span>
+                                    Город
+                                </span>
+                                <input type="text" placeholder="Севастополь">
+                                <span>
+                                    Улица
+                                </span>
+                                <input type="text" placeholder="Заморская">
+                                <span>
+                                    Дом
+                                </span>
+                                <input type="text" placeholder="5 корпус 2">
+                                <span>
+                                    Квартира
+                                </span>
+                                <input type="number" placeholder="234">
+
+                            </label>
+                        </div>
+                        <div class="orders-form-item orders-delivery orders-payment">
+                            <label>
+                                <p>Способ оплаты</p>
+                                <select required>
+                                    <option selected disabled value="Выберите удобный способ оплаты заказа">Выберите
+                                        удобный способ оплаты заказа
+                                    </option>
+                                    <option value="Visa">Visa</option>
+                                    <option value="UnionPay">UnionPay</option>
+                                    <option class="Yandex.Money">Yandex.Money</option>
+                                </select>
+                            </label>
+                        </div>
+                        <button class="mob-order-btn">Завершить оформление заказа</button>
+                    </div>
+                    <div class="orders-cart">
+                        <h3 class="orders-title">В корзине <span>(120)</span></h3>
+                        <div class="orders-cart-title">
+                            <p>Наименование</p>
+                            <p class="amount-title">Кол-во</p>
+                            <p class="price-title">Цена</p>
+                            <p class="subtotal-title">Подытог</p>
+                        </div>
+                        <div class="orders-cart-items">
+                            <ul>
+                                <li>
+                                    <div class="cart-item">
+                                        <div class="item name d-flex justify-content-between ">
+                                            <img src="img/orders/orders-product-1.png" alt="product" align="top">
+                                            <p>Плита укрепления откоса с петлями П-1</p>
+                                        </div>
+                                        <div class="item amount d-flex flex-column align-items-start">
+                                            <div>
+                                                <div class="counter">
+                                                    <button type="button" class="counter-btn" data-direction="minus">-</button>
+                                                    <input value="120" class="counter-value" />
+                                                    <button type="button" class="counter-btn" data-direction="plus">+</button>
+                                                </div>
+                                                <p class="counter-text">м<sup>2</sup></p>
+                                            </div>
+                                            <p class="amount-text text-decoration-underline">Удалить</p>
+                                        </div>
+                                        <div class="item price">
+                                            <p>1 050 <span>₽</span></p>
+                                        </div>
+                                        <div class="item subtotal">
+                                            <p><b>15 050 <span>₽</span></b></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cart-item">
+                                        <div class="item name d-flex justify-content-between ">
+                                            <img src="img/orders/orders-product-1.png" alt="product" align="top">
+                                            <p>Плита укрепления откоса с петлями П-1</p>
+                                        </div>
+                                        <div class="item amount d-flex flex-column align-items-start">
+                                            <div>
+                                                <div class="counter">
+                                                    <button type="button" class="counter-btn" data-direction="minus">-</button>
+                                                    <input value="10" class="counter-value" />
+                                                    <button type="button" class="counter-btn" data-direction="plus">+</button>
+                                                </div>
+                                                <p class="counter-text">шт</p>
+                                            </div>
+                                            <p class="amount-text text-decoration-underline">Удалить</p>
+                                        </div>
+                                        <div class="item price">
+                                            <p class="price-old text-decoration-line-through">4 990<span>₽</span></p>
+                                            <p>&nbsp 2 990 <span>₽</span></p>
+                                        </div>
+                                        <div class="item subtotal">
+                                            <p><b>10 950 <span>₽</span></b></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cart-item">
+                                        <div class="item name d-flex justify-content-between ">
+                                            <img src="img/orders/orders-product-1.png" alt="product" align="top">
+                                            <p>Плита укрепления откоса с петлями П-1</p>
+                                        </div>
+                                        <div class="item amount d-flex flex-column align-items-start">
+                                            <div>
+                                                <div class="counter">
+                                                    <button type="button" class="counter-btn" data-direction="minus">-</button>
+                                                    <input value="2" class="counter-value" />
+                                                    <button type="button" class="counter-btn" data-direction="plus">+</button>
+                                                </div>
+                                                <p class="counter-text">м/п</p>
+                                            </div>
+                                            <p class="amount-text text-decoration-underline">Удалить</p>
+                                        </div>
+                                        <div class="item price">
+                                            <p>850 <span>₽</span></p>
+                                        </div>
+                                        <div class="item subtotal">
+                                            <p><b>4 850 <span>₽</span></b></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cart-item">
+                                        <div class="item name d-flex justify-content-between ">
+                                            <img src="img/orders/orders-product-1.png" alt="product" align="top">
+                                            <p>Плита укрепления откоса с петлями П-1</p>
+                                        </div>
+                                        <div class="item amount d-flex flex-column align-items-start">
+                                            <div>
+                                                <div class="counter">
+                                                    <button type="button" class="counter-btn" data-direction="minus">-</button>
+                                                    <input value="155" class="counter-value" />
+                                                    <button type="button" class="counter-btn" data-direction="plus">+</button>
+                                                </div>
+                                                <p class="counter-text">м/п</p>
+                                            </div>
+                                            <p class="amount-text text-decoration-underline">Удалить</p>
+                                        </div>
+                                        <div class="item price">
+                                            <p>990<span>₽</span></p>
+                                        </div>
+                                        <div class="item subtotal">
+                                            <p><b>10 990 <span>₽</span></b></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mob-orders-cart-items">
+                            <div class="cart-mob-item">
+                                <div class="mob-item-title">Наименование</div>
+                                <div class="mob-item-main">
+                                    <img src="./img/productCard/modal-cart-image.png" alt="item-image" />
+                                    <div class="mob-item-description">Плитка укрепления откоса с петлями П-1</div>
+                                    <div class="mob-item-cost">1050 ₽</div>
+                                </div>
+                                <div class="mob-item-footer">
+                                    <div class="mob-input-group-cart-item-control">
+                                        <label for="mob-item-count">Кол-во</label>
+                                        <div class="input-group mb2 mob-cart-item-control">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-outline-secondary btn-minus mob-btn-counter" data-direction="minus" type="button">-</button>
+                                            </div>
+                                            <input type="number" class="form-control" name="mob-item-count" id="mob-item-count" value="120">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary btn-plus mob-btn-counter" data-direction="plus" type="button">+</button>
+                                            </div>
+                                            <span>м²</span>
+                                        </div>
+                                        <span class="mob-cart-item-reset">Удалить</span>
+                                    </div>
+                                    <div class="mob-summary">
+                                        <span>Подытог</span>
+                                        <div class="mob-all-cost">15 050 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-mob-item">
+                                <div class="mob-item-title">Наименование</div>
+                                <div class="mob-item-main">
+                                    <img src="./img/productCard/modal-cart-image.png" alt="item-image" />
+                                    <div class="mob-item-description">Плитка укрепления откоса с петлями П-1</div>
+                                    <div class="mob-item-cost">1050 ₽</div>
+                                </div>
+                                <div class="mob-item-footer">
+                                    <div class="mob-input-group-cart-item-control">
+                                        <label for="mob-item-count">Кол-во</label>
+                                        <div class="input-group mb2 mob-cart-item-control">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-outline-secondary btn-minus mob-btn-counter" data-direction="minus" type="button">-</button>
+                                            </div>
+                                            <input type="number" class="form-control" name="mob-item-count" id="mob-item-count" value="120">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary btn-plus mob-btn-counter" data-direction="plus" type="button">+</button>
+                                            </div>
+                                            <span>м²</span>
+                                        </div>
+                                        <span class="mob-cart-item-reset">Удалить</span>
+                                    </div>
+                                    <div class="mob-summary">
+                                        <span>Подытог</span>
+                                        <div class="mob-all-cost">15 050 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-mob-item">
+                                <div class="mob-item-title">Наименование</div>
+                                <div class="mob-item-main">
+                                    <img src="./img/productCard/modal-cart-image.png" alt="item-image" />
+                                    <div class="mob-item-description">Плитка укрепления откоса с петлями П-1</div>
+                                    <div class="mob-item-cost">1050 ₽</div>
+                                </div>
+                                <div class="mob-item-footer">
+                                    <div class="mob-input-group-cart-item-control">
+                                        <label for="mob-item-count">Кол-во</label>
+                                        <div class="input-group mb2 mob-cart-item-control">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-outline-secondary btn-minus mob-btn-counter" data-direction="minus" type="button">-</button>
+                                            </div>
+                                            <input type="number" class="form-control" name="mob-item-count" id="mob-item-count" value="120">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-secondary btn-plus mob-btn-counter"data-direction="plus"  type="button">+</button>
+                                            </div>
+                                            <span>м²</span>
+                                        </div>
+                                        <span class="mob-cart-item-reset">Удалить</span>
+                                    </div>
+                                    <div class="mob-summary">
+                                        <span>Подытог</span>
+                                        <div class="mob-all-cost">15 050 ₽</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orders-cart-total">
+                            <div class="d-flex justify-content-between">
+                                <p>Кол-во товаров</p>
+                                <p>239</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p>Сумма заказа</p>
+                                </div>
+                                <div>
+                                    <p>40 340 <span>₽</span></p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p>Доставка</p>
+                                <p>5000 <span>₽</span></p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p><b>Итого</b></p>
+                                <p class=""><b>45 000 <span>₽</span></b></p>
+                            </div>
+                        </div>
+                        <button type="button" class="order-btn">Завершить оформление заказа</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer ">
+        <div class="container-xxl ">
+            <div class="footer-logo "><img src="./img/logo.svg " alt=" "></div>
+            <div class="footer-top row justify-content-between align-items-start ">
+                <div class="footer-info col-4 col-sm-12 ">
+                    <div class="footer-info-item footer-info-address ">г. Москва, Чермянский проезд, дом 7, офис 2111 (1-й этаж)
+                    </div>
+                    <a href="tel:4951500991 " class="footer-info-item footer-info-phone ">(495) 150-09-91</a>
+                    <div class="footer-info-item footer-info-occupy ">Наши менеджеры работают:
+                        <br> <span>Пн-пт c 8.30 до 19.00</span> <br><span>В субботу</span> приём только по предварительной записи.
+                        <br> <span>Воскресенье</span> - выходной.
+                        <div class="footer-info-order "> Заказы через сайт принимаются круглосуточно и без выходных.
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-items col d-flex justify-content-around ">
+                    <div class="footer-item footer-item-1 col ">
+                        <h5 class="footer-item-title ">Каталог</h5>
+                        <ul class="footer-list ">
+                            <li><a href="# ">Тротуарная плитка</a></li>
+                            <li><a href="# ">Бордюрный камень</a></li>
+                            <li><a href="# ">Вибропресованные ступени</a></li>
+                            <li><a href="# ">Водоотводные лотки</a></li>
+                            <li><a href="# ">Дренажные лотки</a></li>
+                            <li><a href="# ">Гранитные изделия для дорог</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item footer-item-2 col ">
+                        <h5 class="footer-item-title ">Покупателям</h5>
+                        <ul class="footer-list ">
+                            <li><a href="# ">Акции</a></li>
+                            <li><a href="# ">Распродажа</a></li>
+                            <li><a href="# ">Прайс-листы</a></li>
+                            <li><a href="# ">О компании</a></li>
+                            <li><a href="# ">Галерея</a></li>
+                            <li><a href="# ">Услуги</a></li>
+                            <li><a href="# ">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social col-3 col-sm-12 ">
+                    <div class="footer-social-company ">© «Градди» — Тротуарная плитка в Москве, 1995–2022 г.</div>
+                    <ul class="footer-social-list d-flex align-items-center ">
+                        <li>
+                            <a href="# "> <img src="./img/footer-social-1.svg " alt=" "> </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                                <img src="./img/footer-social-2.svg " alt=" "> </a>
+                        </li>
+                        <li>
+                            <a href="# "> <img src="./img/footer-social-3.svg " alt=" ">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom row d-flex justify-content-center align-items-center ">
+                <a href="# " class="footer-bottom-policy col-4 col-sm-5 ">Политика конфиденциальности персональных
+                    данных</a> <a href="# " class="footer-bottom-map col-2 ">Карта сайта</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.min.js "></script>
+    <script src="./js/script.js "></script>
+    <script src="./js/orders.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6d70eff4acb81481ba625a068d2d26a4ec4bd74f2ff82fbfc7c70c4e0cb6fbe4&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+</body>
+
+</html>
