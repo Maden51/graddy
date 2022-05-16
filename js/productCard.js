@@ -236,13 +236,12 @@ const swiperProducts2 = new Swiper('.products-wrapper-2', {
         600: {
             spaceBetween: 10,
         },
-        375: {
+        330: {
             slidesPerView: 2,
             spaceBetween: 17,
         },
         280: {
             slidesPerView: 1,
-            spaceBetween: 17,
         }
     }
 });
@@ -271,13 +270,12 @@ const swiperProducts3 = new Swiper('.products-wrapper-3', {
         600: {
             spaceBetween: 10,
         },
-        375: {
+        330: {
             slidesPerView: 2,
             spaceBetween: 17,
         },
         280: {
             slidesPerView: 1,
-            spaceBetween: 17,
         }
     }
 });

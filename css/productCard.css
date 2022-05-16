@@ -1600,6 +1600,12 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
+@media (max-width: 330px) {
+    .productCard-content .container-xxl.position-relative {
+        padding: 0 26px !important;
+    }
+}
+
 @media (max-width: 321px) {
     .cart-mob-main .mob-summary {
         width: 25%;
