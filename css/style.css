@@ -538,6 +538,10 @@
     .products .container-xxl {
         position: relative;
     }
+
+    .product-card-top {
+        position: relative;
+    }
     
     .gallery .container-xxl {
         position: relative;
@@ -546,7 +550,6 @@
     .products-card {
         background: #FFFFFF;
         padding: 0 16px 18px;
-        height: 100% !important;
         display: flex;
         min-height: 250px;
         height: auto;
@@ -576,9 +579,9 @@
         position: absolute;
         background: #FF7800;
         padding: 6px;
-        right: 0;
+        right: -16px;
         border: 0;
-        bottom: 120px;
+        bottom: 0;
         cursor: pointer;
         transition: all .3s ease;
     }
@@ -620,6 +623,7 @@
         text-transform: uppercase;
         color: #FF7800;
         margin-right: 10px;
+        white-space: nowrap;
     }
     
     .products-card-pricenew {
@@ -631,6 +635,7 @@
         letter-spacing: 0.07em;
         text-transform: uppercase;
         color: #727272;
+        white-space: nowrap;
     }
     
     body .swiper-button-prev::after,
@@ -1068,9 +1073,6 @@
         .about-mob-next img {
             margin-left: 14px;
         }
-        .products-card {
-            padding: 0 10px 13px;
-        }
         .products-card-name {
             font-size: 16px;
             line-height: 1.4;
@@ -1094,9 +1096,6 @@
     }
     
     @media(max-width: 656px) {
-        .products-card {
-            height: 230px !important;
-        }
         .products-card-pricenew {
             font-size: 14px;
             line-height: 149.9%;
@@ -1108,10 +1107,6 @@
         .products-card-name {
             font-size: 14px;
             line-height: 114.9%;
-        }
-        .products-card-cart {
-            right: 5px;
-            bottom: 90px;
         }
     }
     
@@ -1354,9 +1349,6 @@
             width: 110px;
             height: 125px;
         }
-        .products-card-cart {
-            bottom: 90px;
-        }
         .products-card-name {
             font-size: 13px;
             line-height: 114%;
@@ -1581,12 +1573,14 @@
         padding: 4px;
         left: 4px;
         clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-        background: linear-gradient(0, #262626 0%, rgba(0, 0, 0, 0.15) 55.07%);
+        background: linear-gradient(0, #262626 0%, rgba(0, 0, 0, 0.15) 45.07%);
+
     }
     
     .main .swiper-pagination-image {
         width: 100%;
         height: 100%;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     }
     
     .main .swiper-slide-text {
@@ -2395,10 +2389,6 @@
             height: 165px;
             width: 320px;
         }
-
-        .products-card-cart {
-            bottom: 117px;
-        }
     }
     
     .company-item {
@@ -2875,6 +2865,12 @@
     @media(max-width: 989px) {
         .catalog-items {
             justify-content: center !important;
+        }
+    }
+
+    @media(max-width: 800px) {
+        .products-card-prices {
+            flex-direction: column;
         }
     }
     

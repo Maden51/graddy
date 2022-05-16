@@ -36,7 +36,7 @@ window.addEventListener('scroll', function() {
         headerEmail.classList.remove('is-active')
         header.style.background = 'rgba(0, 65, 71, .8)';
         headerMiddle.style.minHeight = 0;
-        // headerWrapper.style.minHeight = 0;
+        // headerWrapper.style.minHeight = '50px';
         // headerMiddle.style.marginTop = '18px';
     } else {
         headerDrop.classList.remove('is-active');
@@ -60,10 +60,18 @@ function handleOpen(e) {
     headerEmail.classList.remove('is-active')
     catalogBtn.style.color = '#FF7A3E'
     header.style.background = 'rgba(0, 65, 71, .8)'
-    headerDrop.style.marginTop = '35px'
-    // headerMiddle.style.marginTop = '18px';
-    headerMiddle.style.minHeight = 0;
-    headerWrapper.style.minHeight = '86px'; 
+    headerDrop.style.marginTop = '25px'
+
+
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        // headerMiddle.style.marginTop = '18px';
+        headerMiddle.style.minHeight = 0;
+        headerWrapper.style.minHeight = '86px'; 
+    } else {
+        headerWrapper.style.minHeight = '119px'; 
+        
+    }
+    
 };
 
 function handleClose() {
