@@ -2,6 +2,7 @@ const select = document.getElementById('select');
 const hiddenBlock = document.querySelector('.orders-delivery-selected');
 const hiddenCart = document.querySelector('.company-map');
 const btns = document.querySelectorAll('.counter-btn');
+const resetBtns = document.querySelectorAll('.amount-text');
 
 /* Hide/Show block */
 select.addEventListener('change', function (){
@@ -35,9 +36,17 @@ btns.forEach(btn =>{
     })
 })
 
+resetBtns.forEach(e => {
+    e.addEventListener('click', function() {
+        const inp = this.parentElement.querySelector('.counter-value');
+        inp.value = 0;
+    });
+})
+
 /* mob Counter */
 
 const mobBtns = document.querySelectorAll('.mob-btn-counter');
+const mobRstBtns = document.querySelectorAll('.mob-cart-item-reset');
 
 mobBtns.forEach(e => {
     e.addEventListener('click', function() {
@@ -54,4 +63,11 @@ mobBtns.forEach(e => {
 
         inp.value = newValue;
     })
+})
+
+mobRstBtns.forEach(e => {
+    e.addEventListener('click', function() {
+        const inp = this.parentElement.querySelector('.form-control');
+        inp.value = 0;
+    });
 })

@@ -1202,7 +1202,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-@media (min-width: 345px) and (max-width: 400px) {
+@media (min-width: 386px) and (max-width: 400px) {
     .tab-color:nth-child(8) .color-popup {
         left: unset;
         right: 50%;
