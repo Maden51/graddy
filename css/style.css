@@ -94,12 +94,37 @@
         color: #FFFFFF;
         margin: 0px 0px 30px;
     }
+
+    .about-wrapper {
+        column-count: 2;
+        column-gap: 48px;
+    }
     
-    .about-content {
+    .about-wrapper p {
         font-weight: 400;
         font-size: 18px;
         line-height: 149.9%;
         color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .about-wrapper {
+            column-count: 1;
+            column-gap: 0;
+        }
+
+        .about-wrapper .about-next-mob {
+            display: none;
+        }
+    }
+
+    .about-wrapper p:last-child {
+        margin-bottom: 0;
+    }
+
+    .about-wrapper .about-next-mob.active {
+        display: block;
     }
     
     .about-content>span {

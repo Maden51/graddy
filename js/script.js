@@ -12,8 +12,7 @@ const mobileDropList = document.querySelector('.mobile-drop-list');
 const menuCloseBtn = document.querySelector('.menu-close-btn');
 const mobileBurger = document.querySelector('.header-mobile-burger');
 const aboutNextBtn = document.querySelector('.about-mob-next');
-const aboutMobNext = document.querySelector('.about-next');
-const aboutMobNext2 = document.getElementById('about-next-2');
+const aboutNextWrapper = document.querySelector('.about-wrapper');
 const productsCards = document.querySelectorAll('.products-card');
 
 //Sale classes
@@ -111,10 +110,11 @@ mobileBurger.addEventListener('click', function(e) {
 
 /* aboutNext */
 aboutNextBtn.addEventListener('click', function() {
-        aboutMobNext.classList.add('active');
-        aboutMobNext2.style.display = 'block';
+        aboutNextWrapper.querySelectorAll('.about-next-mob').forEach((p) => {
+            p.classList.add('active')
+        })
         aboutNextBtn.style.display = 'none';
-    })
+})
     /* aboutNext */
 
 /* Swiper Products */
