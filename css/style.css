@@ -546,6 +546,10 @@
     .gallery .container-xxl {
         position: relative;
     }
+
+    .header .header-infos {
+        align-self: baseline;
+    }
     
     .products-card {
         background: #FFFFFF;

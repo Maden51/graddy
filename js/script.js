@@ -35,8 +35,8 @@ window.addEventListener('scroll', function() {
         headerPhonenumber.classList.remove('is-active')
         headerEmail.classList.remove('is-active')
         header.style.background = 'rgba(0, 65, 71, .8)';
-        headerMiddle.style.minHeight = 0;
-        // headerWrapper.style.minHeight = '50px';
+        // headerMiddle.style.minHeight = 0;
+        headerWrapper.style.minHeight = '75px';
         // headerMiddle.style.marginTop = '18px';
     } else {
         headerDrop.classList.remove('is-active');
@@ -45,7 +45,7 @@ window.addEventListener('scroll', function() {
         headerPhonenumber.classList.add('is-active');
         catalogBtn.style.color = '#fff';
         header.style.background = 'rgba(0, 65, 71, .5)';
-        headerMiddle.style.marginTop = 0;
+        // headerMiddle.style.marginTop = 0;
     }
 });
 
@@ -62,14 +62,12 @@ function handleOpen(e) {
     header.style.background = 'rgba(0, 65, 71, .8)'
     headerDrop.style.marginTop = '25px'
 
-
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
         // headerMiddle.style.marginTop = '18px';
-        headerMiddle.style.minHeight = 0;
-        headerWrapper.style.minHeight = '86px'; 
+        // headerMiddle.style.minHeight = 0;
+        headerWrapper.style.minHeight = '119px'; 
     } else {
         headerWrapper.style.minHeight = '119px'; 
-        
     }
     
 };
@@ -82,6 +80,7 @@ function handleClose() {
         catalogBtn.style.color = '#fff'
         // headerMiddle.style.marginTop = '18px';
         headerDrop.style.marginTop = 0
+        headerMiddle.style.minHeight = '80px'
     } else {
         headerDrop.classList.remove('is-active')
         headerSearch.classList.add('is-active')
