@@ -1,0 +1,21 @@
+.content img {
+    float: right;
+    margin: 0 24px 24px 24px;
+}
+
+.content-top-item h2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'El Messiri';
+    line-height: 149.9%;
+    text-transform: uppercase;
+    color: #4c4c4c;
+    margin-bottom: 16px;
+}
+
+.content-top-item p {
+    font-size: 16px;
+    line-height: 23.98px;
+    color: #4c4c4c;
+    margin-bottom: 20px;
+}
