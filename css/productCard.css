@@ -267,7 +267,7 @@
     flex-wrap: nowrap;
 }
 
-.input-group-cart-item-control span  {
+.input-group-cart-item-control a {
     font-size: 12px;
     text-decoration-line: underline;
     opacity: 0.5;

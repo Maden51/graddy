@@ -14,6 +14,19 @@ const mobileBurger = document.querySelector('.header-mobile-burger');
 const aboutNextBtn = document.querySelector('.about-mob-next');
 const aboutMobNext = document.querySelector('.about-next');
 const aboutMobNext2 = document.getElementById('about-next-2');
+const productsCards = document.querySelectorAll('.products-card');
+
+//Sale classes
+
+productsCards.forEach((card) => {
+    if (card.classList.contains('with-sale')) {
+        const oldPrice = card.querySelector('.products-card-priceold');
+        oldPrice.style.display = 'block';
+    } else {
+        const oldPrice = card.querySelector('.products-card-priceold');
+        oldPrice.style.display = 'none';
+    }
+})
 
 // Hide header with scroll
 

@@ -326,7 +326,6 @@ const cartCountBox = document.querySelector('.cart-item-control');
 const cartCountInput = cartCountBox.querySelector('input');
 const cartCountPlus = cartCountBox.querySelector('.btn-plus');
 const cartCountMinus = cartCountBox.querySelector('.btn-minus');
-const cartResetBtn = document.querySelector('.cart-item-reset')
 
 cartCountMinus.addEventListener('click', function(e) {
     e.preventDefault();   
@@ -342,16 +341,10 @@ cartCountPlus.addEventListener('click', function(e) {
     cartCountInput.value = Number(cartCountInput.value) + 1;
 })
 
-cartResetBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    cartCountInput.value = 0;
-})
-
 const mobCartCountBox = document.querySelector('.mob-cart-item-control');
 const mobCartCountInput = mobCartCountBox.querySelector('input');
 const mobCartCountPlus = mobCartCountBox.querySelector('.btn-plus');
 const mobCartCountMinus = mobCartCountBox.querySelector('.btn-minus');
-const mobCartResetBtn = document.querySelector('.mob-cart-item-reset')
 
 mobCartCountMinus.addEventListener('click', function(e) {
     e.preventDefault();   
@@ -365,11 +358,6 @@ mobCartCountMinus.addEventListener('click', function(e) {
 mobCartCountPlus.addEventListener('click', function(e) {
     e.preventDefault();   
     mobCartCountInput.value = Number(mobCartCountInput.value) + 1;
-})
-
-mobCartResetBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    mobCartCountInput.value = 0;
 })
 
 //popup on colors
