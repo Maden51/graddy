@@ -395,7 +395,7 @@ colorDivs.forEach(element => {
         const popup = e.target.querySelector('.color-popup');
         element.removeChild(popup);
     })
-}); 
+});
 
 //cart-mob
 
