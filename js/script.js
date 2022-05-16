@@ -6,6 +6,7 @@ const headerPhonenumber = document.querySelector('body > header > div > div > di
 const headerEmail = document.querySelector('.header-infos .header-infos-email');
 const header = document.querySelector('.header');
 const headerMiddle = document.querySelector('.header-middle');
+const headerList = document.querySelector('.header-list');
 const mobileMenu = document.querySelector('.mob-menu');
 const mobileDropBtn = document.querySelector('.mobile-menu-drop');
 const mobileDropList = document.querySelector('.mobile-drop-list');
@@ -35,7 +36,7 @@ window.addEventListener('scroll', function() {
         headerPhonenumber.classList.remove('is-active')
         headerEmail.classList.remove('is-active')
         header.style.background = 'rgba(0, 65, 71, .8)';
-        headerMiddle.style.minHeight = "50px";
+        headerMiddle.style.minHeight = 0;
         headerWrapper.style.height = '65px';
         // headerMiddle.style.marginTop = '18px';
     } else {
@@ -45,8 +46,9 @@ window.addEventListener('scroll', function() {
         headerPhonenumber.classList.add('is-active');
         catalogBtn.style.color = '#fff';
         header.style.background = 'rgba(0, 65, 71, .5)';
-        headerWrapper.style.height="119px";
-        headerMiddle.style.minHeight="80px";
+        headerWrapper.style.height= "119px";
+        headerMiddle.style.minHeight= "80px";
+        headerList.style.marginBottom= 0
         // headerMiddle.style.marginTop = 0;
     }
 });
@@ -69,9 +71,9 @@ function handleOpen(e) {
         // headerMiddle.style.minHeight = 0;
         // headerWrapper.style.height = '119px'; 
         // headerMiddle.style.minHeight = '119px'
-        headerDrop.style.marginTop = '40px'
+        headerDrop.style.marginTop = '60px'
     } else {
-        // headerMiddle.style.minHeight = '99px'; 
+        headerMiddle.style.minHeight = '80px'; 
         headerWrapper.style.height = '119px'; 
         headerDrop.style.marginTop = '20px'
     }
