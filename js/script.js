@@ -37,8 +37,8 @@ window.addEventListener('scroll', function() {
         headerEmail.classList.remove('is-active')
         header.style.background = 'rgba(0, 65, 71, .8)';
         headerMiddle.style.minHeight = 0;
-        headerMiddle.style.marginTop = '18px';
-        headerWrapper.style.minHeight = 0;
+        // headerWrapper.style.minHeight = 0;
+        // headerMiddle.style.marginTop = '18px';
     } else {
         headerDrop.classList.remove('is-active');
         headerSearch.classList.add('is-active');
@@ -61,26 +61,30 @@ function handleOpen(e) {
     headerEmail.classList.remove('is-active')
     catalogBtn.style.color = '#FF7A3E'
     header.style.background = 'rgba(0, 65, 71, .8)'
-    headerMiddle.style.minHeight = '80px';
-    headerWrapper.style.minHeight = '120px';
+    headerDrop.style.marginTop = '35px'
+    // headerMiddle.style.marginTop = '18px';
+    headerMiddle.style.minHeight = 0;
+    headerWrapper.style.minHeight = '86px'; 
 };
 
 function handleClose() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
         headerDrop.classList.remove('is-active')
-        headerMiddle.style.minHeight = 0;
-        headerWrapper.style.minHeight = 0;
+        // headerMiddle.style.minHeight = 0;
+        // headerWrapper.style.minHeight = 0;
         catalogBtn.style.color = '#fff'
-        headerMiddle.style.marginTop = '18px';
+        // headerMiddle.style.marginTop = '18px';
+        headerDrop.style.marginTop = 0
     } else {
         headerDrop.classList.remove('is-active')
         headerSearch.classList.add('is-active')
         headerEmail.classList.add('is-active')
         headerPhonenumber.classList.add('is-active')
-        headerMiddle.style.minHeight = 0;
-        headerWrapper.style.minHeight = 0;
+        // headerMiddle.style.minHeight = 0;
+        // headerWrapper.style.minHeight = 0;
         catalogBtn.style.color = '#fff'
         header.style.background = 'rgba(0, 65, 71, .5)'
+        headerDrop.style.marginTop = 0
     }
 }
 
