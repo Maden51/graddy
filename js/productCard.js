@@ -372,6 +372,7 @@ colorDivs.forEach(element => {
         const parentWidth = element.parentElement.getBoundingClientRect();
         const divColor = element.dataset.color;
         const divName = element.dataset.name;
+        const divSales = element.dataset.sales;
         if (currentElementCoord.x > (parentWidth.width / 2)) {
             const popup = document.createElement('div');
             popup.className = 'color-popup popup-left';
@@ -381,11 +382,16 @@ colorDivs.forEach(element => {
             </div>
             <div class="right-part">
                 <div class="popup-title">${divName}</div>
-                <div class="old-price">1500 ₽/м</div>
+                <div class="old-price">${divSales} ₽/м</div>
                 <div class="new-price">1140 ₽/м²</div>
             </div>
             `
             element.appendChild(popup)
+            if (divSales === 'false') {
+                element.querySelector('.old-price').style.display = 'none';
+            } else {
+                element.querySelector('.old-price').style.display = 'block'
+            }
         } else {
             const popup = document.createElement('div');
             popup.className = 'color-popup';
@@ -395,11 +401,16 @@ colorDivs.forEach(element => {
             </div>
             <div class="right-part">
                 <div class="popup-title">${divName}</div>
-                <div class="old-price">1500 ₽/м</div>
+                <div class="old-price">${divSales} ₽/м</div>
                 <div class="new-price">1140 ₽/м²</div>
             </div>
             `
             element.appendChild(popup)
+            if (divSales === 'false') {
+                element.querySelector('.old-price').style.display = 'none';
+            } else {
+                element.querySelector('.old-price').style.display = 'block'
+            }
         }
     })
     element.addEventListener('mouseout', function(e) {
