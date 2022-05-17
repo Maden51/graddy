@@ -132,6 +132,9 @@
 /* adapive styles */
 
 @media (max-width: 1250px) {
+    .mob-order-btn {
+        display: block;
+    }
     .orders-forms {
         flex-direction: column-reverse;
     }
