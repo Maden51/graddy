@@ -23,6 +23,7 @@
 .item-image .container-xxl {    
     position: relative;
     width: 90%;
+    padding-left: 0;
 }
 
 .image-wrapper {
