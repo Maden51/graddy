@@ -362,10 +362,14 @@ mobCartCountPlus.addEventListener('click', function(e) {
 
 const colorDivs = document.querySelectorAll('.tab-color');
 colorDivs.forEach(element => {
+    
     element.addEventListener('mouseover', function() {
-        const popup = document.createElement('div');
-        popup.className = 'color-popup';
-        popup.innerHTML = `
+        const currentElementCoord = element.getBoundingClientRect();
+        const parentWidth = element.parentElement.getBoundingClientRect();
+        if (currentElementCoord.x > (parentWidth.width / 2)) {
+            const popup = document.createElement('div');
+            popup.className = 'color-popup popup-left';
+            popup.innerHTML = `
             <div class="left-part">
                 <img src="./img/productCard/popup-image.svg" alt="" />
             </div>
@@ -374,8 +378,23 @@ colorDivs.forEach(element => {
                 <div class="old-price">1500 ₽/м</div>
                 <div class="new-price">1140 ₽/м²</div>
             </div>
-        `
-        element.appendChild(popup)
+            `
+            element.appendChild(popup)
+        } else {
+            const popup = document.createElement('div');
+            popup.className = 'color-popup';
+            popup.innerHTML = `
+            <div class="left-part">
+                <img src="./img/productCard/popup-image.svg" alt="" />
+            </div>
+            <div class="right-part">
+                <div class="popup-title">Гранит Южно-Сультаевский</div>
+                <div class="old-price">1500 ₽/м</div>
+                <div class="new-price">1140 ₽/м²</div>
+            </div>
+            `
+            element.appendChild(popup)
+        }
     })
     element.addEventListener('mouseout', function(e) {
         const popup = e.target.querySelector('.color-popup');
