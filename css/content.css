@@ -1,4 +1,4 @@
-.content img {
+.content-top-item img {
     float: right;
     margin: 0 24px 24px 24px;
 }
@@ -13,9 +13,25 @@
     margin-bottom: 16px;
 }
 
-.content-top-item p {
+.content p {
     font-size: 16px;
     line-height: 23.98px;
     color: #4c4c4c;
     margin-bottom: 20px;
+}
+
+.content h3 {
+    font-size: 20px;
+    font-family: 'El Messiri';
+    font-weight: 600;
+    line-height: 30px;
+    color: #4C4C4C;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.content-card {
+    margin-bottom: 15px;
 }
