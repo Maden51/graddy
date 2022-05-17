@@ -362,7 +362,11 @@ mobCartCountPlus.addEventListener('click', function(e) {
 
 const colorDivs = document.querySelectorAll('.tab-color');
 colorDivs.forEach(element => {
-    
+    element.addEventListener('click', function() {
+        element.classList.toogle
+    })
+})
+colorDivs.forEach(element => {
     element.addEventListener('mouseover', function() {
         const currentElementCoord = element.getBoundingClientRect();
         const parentWidth = element.parentElement.getBoundingClientRect();
@@ -373,7 +377,7 @@ colorDivs.forEach(element => {
             popup.className = 'color-popup popup-left';
             popup.innerHTML = `
             <div class="left-part">
-                <img src="../img/productCardColors/${divColor}.svg" alt="" />
+                <img src="./img/productCardColors/${divColor}.svg" alt="" />
             </div>
             <div class="right-part">
                 <div class="popup-title">${divName}</div>
@@ -387,7 +391,7 @@ colorDivs.forEach(element => {
             popup.className = 'color-popup';
             popup.innerHTML = `
             <div class="left-part">
-                <img src="../img/productCardColors/${divColor}.svg" alt="" />
+                <img src="./img/productCardColors/${divColor}.svg" alt="" />
             </div>
             <div class="right-part">
                 <div class="popup-title">${divName}</div>
