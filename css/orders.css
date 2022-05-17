@@ -238,6 +238,10 @@
     .item.name {
         width: 100%;
     }
+
+    .orders-form-item label input, .orders-delivery label select {
+        width: 270px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -263,7 +267,7 @@
     }
 
     .orders-form-item label input, .orders-delivery label select {
-        width: 275px;
+        max-width: 100%;
     }
 
     .company-map iframe {
@@ -305,6 +309,10 @@
     .cart-item-left {
         width: 83%;
     }
+
+    .orders-form-item label input, .orders-delivery label select {
+        width: 230px;
+    }
 }
 
 @media (max-width: 300px) {
@@ -313,7 +321,7 @@
     }
 
     .orders-form-item label input, .orders-delivery label select {
-        width: 240px;
+        width: 230px;
     }
 
     .orders-delivery label select {
