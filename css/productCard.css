@@ -612,6 +612,12 @@ input[type=number]::-webkit-outer-spin-button {
     border: 1px solid #FFF;
 }
 
+.left-part img {
+    width: 74px;
+    height: 74px;
+    border-radius: 37px;
+}
+
 .tab-color.color-1 {
     background-image: url('../img/productCardColors/color1.svg');
 }

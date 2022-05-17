@@ -366,15 +366,17 @@ colorDivs.forEach(element => {
     element.addEventListener('mouseover', function() {
         const currentElementCoord = element.getBoundingClientRect();
         const parentWidth = element.parentElement.getBoundingClientRect();
+        const divColor = element.dataset.color;
+        const divName = element.dataset.name;
         if (currentElementCoord.x > (parentWidth.width / 2)) {
             const popup = document.createElement('div');
             popup.className = 'color-popup popup-left';
             popup.innerHTML = `
             <div class="left-part">
-                <img src="./img/productCard/popup-image.svg" alt="" />
+                <img src="../img/productCardColors/${divColor}.svg" alt="" />
             </div>
             <div class="right-part">
-                <div class="popup-title">Гранит Южно-Сультаевский</div>
+                <div class="popup-title">${divName}</div>
                 <div class="old-price">1500 ₽/м</div>
                 <div class="new-price">1140 ₽/м²</div>
             </div>
@@ -385,10 +387,10 @@ colorDivs.forEach(element => {
             popup.className = 'color-popup';
             popup.innerHTML = `
             <div class="left-part">
-                <img src="./img/productCard/popup-image.svg" alt="" />
+                <img src="../img/productCardColors/${divColor}.svg" alt="" />
             </div>
             <div class="right-part">
-                <div class="popup-title">Гранит Южно-Сультаевский</div>
+                <div class="popup-title">${divName}</div>
                 <div class="old-price">1500 ₽/м</div>
                 <div class="new-price">1140 ₽/м²</div>
             </div>
