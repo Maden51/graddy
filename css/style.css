@@ -2898,11 +2898,55 @@
             left: 45px;
         }
     }
-    
-    @media(max-width: 400px) {
+
+    @media(max-width: 602px) {
         .catalog-item {
-            margin-right: 0px;
-            margin-bottom: 20px;
+            width: 47%;
+            height: 100%;
+        }
+
+        .catalog-item:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        .catalog-item-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .catalog-item p {
+            font-size: 16px;
+        }
+    }
+
+    @media(max-width: 515px) {
+        .catalog-item p {
+            font-size: 14px;
+            /* left: 10%; */
+        }
+    }
+
+    @media(max-width: 460px) {
+        .catalog-item p {
+            left: 10%;
+        }
+    }
+
+    @media(max-width: 400px) {
+        .catalog-item p {
+            font-size: 11px;
+            left: 13%;
+        }
+    }
+    
+    @media(max-width: 319px) {
+        .catalog-item {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        .catalog-item p {
+            font-size: 18px;
         }
     }
     
