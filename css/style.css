@@ -673,6 +673,8 @@
         display: flex;
         justify-content: center;
     }
+
+
     
     .swiper-main-button-prev,
     .swiper-main-button-next {
@@ -1039,14 +1041,84 @@
         .filter-tools {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 21px;
         }
         .filter-mobile-burger {
             display: flex;
             width: 92px;
-            margin-bottom: 21px;
             cursor: pointer;
         }
-        .filter-mobile-sort {}
+        .filter-mobile-sort li {
+            width: 100%;
+        }
+
+        .bootstrap-select>.dropdown-toggle {
+            background-color: transparent;
+            border-radius: 0;
+            border: none;
+        }
+
+        .dropdown-menu {
+            background-color: #FFF;
+            border-radius: 0;
+            padding-bottom: 0;
+
+        }
+
+        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+            width: 160px!important;
+            min-width: fit-content;
+        }
+
+        .dropdown-toggle::after {
+            border: none;
+            background-image: url('../img/menu-arrow.svg');
+            width: 8px;
+            height: 6px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .dropdown-menu {
+            padding-top: 0;
+        }
+
+        .dropup .dropdown-toggle::after {
+            border: none;
+        }
+
+        .bootstrap-select .dropdown-menu li a span.text {
+            font-size: 14px;
+            color: #4c4c4c;
+            line-height: 150%;
+            opacity: 1;
+            margin-bottom: 0;
+        }
+
+        .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+            color: #FFF;
+        }
+
+        .dropdown-item.active, .dropdown-item:active {
+            background-color: transparent;
+        }
+
+        .btn-check:focus+.btn-light, .btn-light:focus {
+            box-shadow: none;
+        }
+
+        .bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+            outline: none !important;
+        }
+
+        .orders-form-item select:focus {
+            outline: none;
+        }
+        
+
+        .filter-mobile-sort .select-dropdown {
+            /* width: 28%; */
+        }
     }
     
     @media(max-width: 769px) {
