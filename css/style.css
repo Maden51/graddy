@@ -539,6 +539,10 @@
     .product-card-top {
         position: relative;
     }
+
+    .filter-mobile-sort .select-dropdown ul {
+        margin-bottom: 0;
+    }
     
     .gallery .container-xxl {
         position: relative;
