@@ -285,7 +285,7 @@
         justify-content: unset;
     }
     .item.name {
-        width: 90%;
+        width: 70%;
     }
 
     .item.price {
@@ -303,7 +303,11 @@
         width: 77%;
     }
 }
-
+@media (max-width:410px) {
+    .item.name {
+        width: 80%;
+    }
+}
 @media (max-width:360px) {
     .item.name {
         width: 100%;
