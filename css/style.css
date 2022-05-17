@@ -1107,14 +1107,13 @@
             box-shadow: none;
         }
 
-        .bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+        .filter-tools .bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
             outline: none !important;
         }
 
         .orders-form-item select:focus {
             outline: none;
         }
-        
 
         .filter-mobile-sort .select-dropdown {
             /* width: 28%; */
