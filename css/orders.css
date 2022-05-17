@@ -40,6 +40,76 @@
     /* opacity: 0.5; */
 }
 
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 496px;
+    height: 43px;
+}
+
+.bootstrap-select>.dropdown-toggle {
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid #4c4c4c85;
+    outline: none;
+    height: 43px;
+}
+
+.dropdown-toggle::after {
+    border: none;
+    background-image: url('../img/orders/Vector\ 11.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 9px;
+}
+
+.dropup .dropdown-toggle::after {
+    border: none;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option {
+    height: 24px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: transparent;
+}
+
+.dropdown-item {
+    background-color: #23bbc9;
+    padding: 9px 21px;
+}
+
+.dropdown-menu {
+    background-color: #23bbc9;
+    border-radius: 0;
+    padding-bottom: 0;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    color: #4c4c4c;
+}
+
+.btn-check:focus+.btn-light, .btn-light:focus {
+    box-shadow: none;
+}
+
+.bootstrap-select .dropdown-menu li a span.text {
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 150%;
+    opacity: 1;
+    margin-bottom: 0;
+}
+
+.btn-check:active+.btn-light, .btn-check:checked+.btn-light, .btn-light.active, .btn-light:active, .show>.btn-light.dropdown-toggle {
+    background-color: transparent;
+    border-color: #4c4c4c;
+}
+
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+    outline: none !important;
+}
+
 .orders-form-item select:focus {
     outline: none;
 }
@@ -97,7 +167,7 @@
         width: 100%;
     }
 
-    .orders-form-item label input, .orders-delivery label select {
+    .orders-form-item label input, .orders-delivery label select, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
         width: 400px;
     }
 
@@ -181,7 +251,7 @@
         background-position: calc(100% - 12px) calc(1em - -3px), calc(100% - 15px) calc(1em + 2px), 100% 0;
     }
     
-    .orders-form-item label input, .orders-delivery label select {
+    .orders-form-item label input, .orders-delivery label select, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
         width: 310px;
     }
 
@@ -239,7 +309,7 @@
         width: 100%;
     }
 
-    .orders-form-item label input, .orders-delivery label select {
+    .orders-form-item label input, .orders-delivery label select, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
         width: 270px;
     }
 }
@@ -301,7 +371,7 @@
     }
 }
 
-@media (max-width:320px) {
+@media (max-width:319px) {
     .item.subtotal {
         right: 17%;
     }
@@ -310,7 +380,7 @@
         width: 83%;
     }
 
-    .orders-form-item label input, .orders-delivery label select {
+    .orders-form-item label input, .orders-delivery label select, .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
         width: 230px;
     }
 }

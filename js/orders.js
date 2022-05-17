@@ -55,3 +55,17 @@ mobBtns.forEach(e => {
         inp.value = newValue;
     })
 })
+
+// orders sale
+
+const orderCards = document.querySelectorAll('.cart-item')
+
+orderCards.forEach((card) => {
+    if (card.classList.contains('with-sale')) {
+        const oldPrice = card.querySelector('.price-old');
+        oldPrice.style.display = 'block';
+    } else {
+        const oldPrice = card.querySelector('.price-old');
+        oldPrice.style.display = 'none';
+    }
+})
