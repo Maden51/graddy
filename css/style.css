@@ -1065,6 +1065,11 @@
 
         }
 
+        .btn-check:active+.btn-light, .btn-check:checked+.btn-light, .btn-light.active, .btn-light:active, .show>.btn-light.dropdown-toggle {
+            background-color: transparent;
+            border-color: unset;
+        }
+
         .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
             width: 160px!important;
             min-width: fit-content;
