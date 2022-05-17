@@ -1169,9 +1169,21 @@
         padding: 200px 0 50px;
         background: url('../img/news/news-bg.png');
         background-repeat: no-repeat;
-        /* background-position: center; */
+        background-position: center;
+        background-position-y: top;
         /* background-size: cover; */
     }
+
+    @media(min-width:1920px) {
+        .news,
+        .content,
+        .company,
+        .orders {
+            background-size: cover;
+        }
+    }
+
+
     
     .breadcrumbs {
         margin-bottom: 8px;

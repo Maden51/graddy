@@ -1,17 +1,17 @@
 const select = document.getElementById('select');
 const hiddenBlock = document.querySelector('.orders-delivery-selected');
-const hiddenCart = document.querySelector('.company-map');
+const hiddenMap = document.querySelector('.company-map');
 const btns = document.querySelectorAll('.counter-btn');
 
 /* Hide/Show block */
 select.addEventListener('change', function (){
     if (select.value === "1"){
-        hiddenCart.style.display = "block";
+        hiddenMap.style.display = "block";
         hiddenBlock.style.display = "none";
     }
     if (select.value === "2"){
         hiddenBlock.style.display = "block";
-        hiddenCart.style.display = "none";
+        hiddenMap.style.display = "none";
     }
 })
 
