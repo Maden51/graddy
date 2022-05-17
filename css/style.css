@@ -2310,6 +2310,31 @@
             display: block;
         }
     }
+    @media(max-width: 815px) {
+        .content-card {
+            width: 100%;
+        }
+        .content-card-img img {
+            width: 100%;
+        }
+    }
+
+    @media(max-width: 575px) {
+        .content-card:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+
+    @media(max-width: 550px) {
+        .content-card {
+            width: 49%;
+        }
+
+        
+        .content-card:nth-child(2n + 1) {
+            margin-right: 2%;
+        }
+    }
     
     @media(max-width: 645px) {
         .content-table tbody td,
@@ -2348,9 +2373,9 @@
     }
     
     @media(max-width: 550px) {
-        .content-cards {
+        /* .content-cards {
             display: none !important;
-        }
+        } */
         .content-top-img img {
             height: 230px;
         }
