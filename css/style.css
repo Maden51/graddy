@@ -2021,7 +2021,7 @@
             margin-right: 0;
         }
         .content-products a:nth-child(n+4) {
-            margin-top: 30px;
+            margin-top: 3.5%;
         }
     }
     
@@ -2366,7 +2366,7 @@
             margin-right: 0;
         }
         .content-products a:nth-child(n+3) {
-            margin-top: 20px;
+            margin-top: 2%;
         }
         .content-products a:nth-child(n+11) {
             display: none;
