@@ -385,7 +385,7 @@ colorDivs.forEach(element => {
 
 //cart-mob
 
-const cartMobBtn = document.querySelector('.form-btn.mobile-button');
+const cartMobBtn = document.querySelector('.form-btn.mobile-button .cart-btn');
 const cartMobDiv = document.querySelector('.cart-mob-menu');
 const cartMobCloseBtn = document.querySelector('.cart-close-btn');
 
