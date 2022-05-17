@@ -1169,6 +1169,8 @@
         padding: 200px 0 50px;
         background: url('../img/news/news-bg.png');
         background-repeat: no-repeat;
+        /* background-position: center; */
+        /* background-size: cover; */
     }
     
     .breadcrumbs {
@@ -3103,6 +3105,7 @@
     
     .name {
         width: 200px;
+        margin-right: 15px;
     }
     
     .name p {
@@ -3157,7 +3160,7 @@
     .price {
         display: flex;
         width: 145px;
-        margin-left: 45px;
+        /* margin-left: 45px; */
     }
     
     .price p {
