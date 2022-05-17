@@ -2177,7 +2177,6 @@
     
     .content-top-item {
         margin-bottom: 43px;
-        margin-right: 24px;
     }
     
     .content-text {
@@ -2287,9 +2286,6 @@
         .content-top-img img {
             height: 275px;
             width: 100%;
-        }
-        .content-top-item {
-            max-width: 550px;
         }
     }
     
@@ -2929,9 +2925,6 @@
     }
     
     @media(max-width:674px) {
-        .content .container-xxl {
-            padding: 0 8px !important;
-        }
         .catalog-item-img,
         .catalog-item {
             width: 278px;
