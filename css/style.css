@@ -550,7 +550,7 @@
     
     .products-card {
         background: #FFFFFF;
-        padding: 0 16px 18px;
+        padding: 16px 16px 18px;
         display: flex;
         min-height: 250px;
         height: auto;
