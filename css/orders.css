@@ -24,6 +24,10 @@
     width: 100%;
 }
 
+.item.subtotal p {
+    margin-bottom: 0;
+}
+
 .orders-form-item select {
     margin: 0;      
     -webkit-box-sizing: border-box;
@@ -205,7 +209,7 @@
     }
 
     .cart-item_mobile-subtotal {
-        margin-bottom: 9px;
+        margin-bottom: 16px;
     }
 
     .item.name {
