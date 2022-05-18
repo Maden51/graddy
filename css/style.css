@@ -3292,7 +3292,7 @@
         justify-content: space-between;
     }
 
-    .amount div:last-child {
+    .amount .counter {
         height: 31px;
     }
     
