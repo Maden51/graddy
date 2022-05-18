@@ -56,9 +56,9 @@
         margin: 0;
     }
 
-    input[type=text], input[type=submit], textarea{
+    input[type=text], input[type=submit], input[type=number], textarea{
         -webkit-appearance: none;
-    } 
+    }
     
     body {
         font-size: 18px;
@@ -1456,7 +1456,7 @@
             height: 150px;
         }
     }
-    
+
     @media(max-width: 409px) {
         
         .products-card-name {
@@ -3312,7 +3312,7 @@
     }
     
     .orders-cart-total {
-        width: 300px;
+        width: 303px;
         margin-top: 10px;
     }
     
