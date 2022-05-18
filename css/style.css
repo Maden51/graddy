@@ -145,10 +145,17 @@
         display: none;
     }
 
+    .counter {
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        appearance: none !important;
+    }
+
     .counter-btn {
         -webkit-appearance: none !important;
         -moz-appearance: none !important;
         appearance: none !important;
+        border-radius: 0;
     }
     
     .mob-menu {
