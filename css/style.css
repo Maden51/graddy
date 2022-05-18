@@ -3290,6 +3290,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .amount div:last-child {
         height: 31px;
     }
     

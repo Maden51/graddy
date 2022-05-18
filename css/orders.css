@@ -221,7 +221,8 @@
     
     .item.subtotal {
         position: absolute;
-        right: 29%;
+        /* right: 29%; */
+        right: 0;
         bottom: 40px;
     }
 
@@ -291,6 +292,9 @@
         margin-right: 0;
     }
     
+    .item.subtotal {
+        right: 29%;
+    }
 
     .cart-item-left {
         width: 82%;
