@@ -142,6 +142,10 @@
     .about-mob-next {
         display: none;
     }
+
+    .counter-btn {
+        -webkit-appearance: none;
+    }
     
     .mob-menu {
         position: fixed;
