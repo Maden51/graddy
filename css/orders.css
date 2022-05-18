@@ -44,6 +44,38 @@
         100% 0;
 }
 
+.mob-cart-item-control button {
+    padding: 4px 7px;
+    vertical-align: unset;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.mob-cart-item-control button:active {
+    background-color: #FF7800;
+    color: #FFF;
+    border-color: #4c4c4c;
+}
+
+.mob-cart-item-control button:hover {
+    color: #FFF;
+    opacity: 1;
+}
+
+.mob-cart-item-control input {
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4c4c4c;
+    background-clip: border-box;
+}
+
+.mob-cart-item-control {
+    height: 32px;
+    width: 95px;
+}
+
 .orders-form-item select:disabled {
     /* opacity: 0.5; */
 }
