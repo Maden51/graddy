@@ -1902,6 +1902,7 @@
         font-weight: 700;
         font-size: 16px;
         position: relative;
+        width: fit-content;
     }
 
     .content-forms-item:first-child label {
