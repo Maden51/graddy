@@ -62,6 +62,10 @@
     opacity: 1;
 }
 
+.mob-cart-item-control span {
+    color: #4c4c4c;
+}
+
 .mob-cart-item-control input {
     border: 1px solid #e5e5e5;
     text-align: center;
@@ -74,6 +78,7 @@
 .mob-cart-item-control {
     height: 32px;
     width: 95px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
 }
 
 .orders-form-item select:disabled {

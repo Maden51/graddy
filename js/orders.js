@@ -21,7 +21,7 @@ select.addEventListener('change', function (){
 btns.forEach(btn =>{
     btn.addEventListener('click', function (){
         const direction = this.dataset.direction;
-        const inp = this.parentElement.querySelector('.counter-value');
+        const inp = this.parentElement.parentElement.querySelector('.form-control');
         const currentValue = +inp.value;
         let newValue;
 
