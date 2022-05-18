@@ -58,6 +58,8 @@
 
     input[type=text], input[type=submit], input[type=number], textarea{
         -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        appearance: none !important;
     }
     
     body {
@@ -145,6 +147,8 @@
 
     .counter-btn {
         -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        appearance: none !important;
     }
     
     .mob-menu {
