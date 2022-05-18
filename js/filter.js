@@ -43,26 +43,6 @@ mobProductsBtn.addEventListener('click', function() {
     });
 })
 
-// filter-select-mob
-
-const selectBtn = document.querySelector('.custom-select');
-const selectDropDown = document.querySelector('.select-dropdown');
-const selectDropDownList = document.querySelector('.select-dropdown ul');
-
-selectBtn.addEventListener('click', function() {
-    selectBtn.classList.toggle('active');
-    selectDropDown.classList.toggle('active');
-});
-
-selectDropDownList.children.forEach(element => {
-    element.addEventListener('click', function(e) {
-        const value = e.target.textContent;
-        selectBtn.textContent = value;
-        selectDropDown.classList.remove('active');
-        selectBtn.classList.remove('active');
-    });
-});
-
 // filter-select
 
 const popularBtn = document.querySelector('.popular');
