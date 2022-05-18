@@ -150,6 +150,10 @@
         -moz-appearance: none !important;
         appearance: none !important;
     }
+    
+    .counter input {
+        border-radius: 0;
+    }
 
     .counter-btn {
         -webkit-appearance: none !important;
