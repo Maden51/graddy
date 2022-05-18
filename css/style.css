@@ -1200,6 +1200,12 @@
             line-height: 114.9%;
         }
     }
+
+    @media (max-width: 608px) {
+        .footer {
+            margin-top: 40px;
+        }
+    }
     
     @media(max-width: 576px) {
         .footer {
@@ -2460,12 +2466,6 @@
         .simplebar-track.simplebar-horizontal .simplebar-scrollbar {
             top: 0;
             left: -2px;
-        }
-    }
-
-    @media(max-width: 608px) {
-        .content-products a:nth-last-child(-n + 2) {
-            margin-bottom: 40px;
         }
     }
     
