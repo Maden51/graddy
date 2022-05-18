@@ -215,6 +215,7 @@
     .item.price {
         margin-bottom: 66px;
         white-space: nowrap;
+        width: 100%;
     }
 
     
@@ -259,10 +260,6 @@
         width: 100%;
     }
 
-    .orders-cart-total {
-        width: 100%;
-    }
-
     .orders-delivery label select {
         font-size: 14px;
     }
@@ -296,9 +293,16 @@
     
 
     .cart-item-left {
-        width: 77%;
+        width: 82%;
     }
 }
+
+@media(max-width:425px) {
+    .mob-order-btn {
+        width: 100%;
+    }
+}
+
 @media (max-width:410px) {
     .item.name {
         width: 80%;
@@ -322,12 +326,15 @@
 }
 
 @media (max-width: 375px) {
-    .orders-form-item select {
-        background-position:
-        calc(100% - 10px) calc(1em + 2px),
-        calc(100% - 15px) calc(1em + 2px),
-        100% 0;
+    .orders-form .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+        font-size: 15px;
     }
+
+    .orders-cart-total {
+        width: 268px;
+    }
+
+
     .mob-order-btn {
         width: 100%;
     }
@@ -367,7 +374,14 @@
     }
 }
 
-@media (max-width:319px) {
+@media (max-width:320px) {
+    .orders-form .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+        font-size: 12px;
+    }
+    .orders-cart-total {
+        width: 260px;
+    }
+
     .item.subtotal {
         right: 17%;
     }
