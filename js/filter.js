@@ -81,20 +81,3 @@ constDownBtn.addEventListener('click', function(e) {
         popularBtn.classList.remove('is-active');
     }
 });
-
-const cardsWithPng = document.querySelectorAll('.with-png');
-const cardsWithJpg = document.querySelectorAll('.with-jpg');
-
-cardsWithJpg.forEach(card => {
-    cardImg = card.querySelector('.products-card-img img');
-    cardImg.style.objectFit = 'cover';
-    cardImg.style.width = '100%';
-    cardImg.style.height = '100%';
-});
-
-cardsWithPng.forEach(card => {
-    cardImg = card.querySelector('.products-card-img img');
-    cardImg.style.objectFit = 'fill';
-    cardImg.style.maxWidth = '100%';
-    cardImg.style.maxHeight = '100%';
-})
